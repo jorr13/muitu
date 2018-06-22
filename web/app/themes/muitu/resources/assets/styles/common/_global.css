@@ -2478,14 +2478,23 @@ p.contenidodos.contenidotres::before {
 /*estilos pagina quienes somos*/
     .menu-menu-lateral-container {
         margin-bottom: 10px;
-        margin-top: 40px;
+        margin-top: 50px;
     }
  .menu-item a {
     font-size: 10px;
   }
+
+  .menu-item a {
+    padding: 14px;
+  }
     .icomenu {
         padding-top: 20px;
         width: 160px;
+    }
+
+    .imagen {
+        padding: 8%;
+        padding-top: 5%;
     }
     
     .botonmenu{
@@ -2805,7 +2814,11 @@ p.contenidodos.contenidotres::before {
 @media only screen and (max-width: 620px) {
 
 /*estilos home parte 1*/
-    
+
+    .icomenu {
+    padding-top: 30px;
+    }
+
     .wrap {
     width: 100% !important;
     }
@@ -3345,6 +3358,10 @@ p.contenidodos.contenidotres::before {
     .slider {
     margin-left: 3% !important;
     }
+
+    .icomenu {
+        padding-top: 30px;
+    }
     
 /*estilos home parte 2*/   
     
@@ -3528,10 +3545,30 @@ p.contenidodos.contenidotres::before {
 .prdctfltr_woocommerce_ordering .prdctfltr_sale label.prdctfltr_active span:before, .prdctfltr_woocommerce_ordering span.prdctfltr_instock label.prdctfltr_active span:before, .prdctfltr_woocommerce_ordering span.prdctfltr_reset label.prdctfltr_active span:before{
     color: #7e8e71 !important;
 }
-.prdctfltr_woocommerce_ordering span.prdctfltr_instock span:before{
+.prdctfltr_woocommerce_ordering span.prdctfltr_instock span::before{
     color: #7e8e71 !important;
 }
 .page-template-default .woocommerce{
     width: 100% !important;
+}
+.prdctfltr_woocommerce_ordering .prdctfltr_sale span:before {
+    color: #7e8e71 !important;
+}
+.woocommerce-page .button{
+    background-color: white !important;
+    color: #7E8E71 !important;
+    border: 3px solid #7E8E71 !important;
+    text-align: center !important;
+    font-size: 12px !important;
+    text-transform: uppercase !important;
+    padding: 17px 13px !important;
+    line-height: 4px !important;
+    border-radius: 0 !important;
+    transition: 0.5s
+}
+.woocommerce-page .button:hover{
+    transition: 0.5s !important;
+    background: #7E8E71 !important;
+    color: white !important;
 }
 /*fin del filtro*/
