@@ -8,8 +8,8 @@
 	    		<ul>
 	    			<li><a href="/quienes-somos">Quienes somos</a></li>
 	    			<li><a href="/comunidades">Comunidades</a></li>
-	    			<li><a href="">Condiciones de venta</a></li>
-	    			<li><a href="">Informacion de privacidad</a></li>
+	    			<li><a href="/condiciones">Condiciones de venta</a></li>
+	    			<li><a href="/informacion">Informacion de privacidad</a></li>
 				</ul>
 				
 			</div>

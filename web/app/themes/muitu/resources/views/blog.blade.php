@@ -1,5 +1,5 @@
 {{--
-  Template Name: Pagina de posts
+  Template Name: Pagina de blog
 --}}
 
 @extends('layouts.app')

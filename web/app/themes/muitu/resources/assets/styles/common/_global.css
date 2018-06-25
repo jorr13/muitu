@@ -68,6 +68,9 @@ logosheader{
 #menu-item-98:hover .sub-menu{
    height: 230px;
 }
+#menu-item-105:hover .sub-menu{
+    height: 230px;
+}
 .imagen{
     padding: 20px 58px;
     background: #F1EFF0;
@@ -859,6 +862,30 @@ opacity: 1 !important;
     position: relative;
 }
 @media screen and (max-width: 600px){
+    img .logo-menusecundario {
+        margin-top: -15px !important;
+    }
+        
+    .page-header {
+        height: 300px;
+        margin-top: 10% !important;
+    }
+        
+    .page-template-posts .posts {
+        margin-top: 20% !important;
+    }
+        
+    .page-template-comunidades .posts .containerposts {
+        margin-top: 25% !important;
+    }
+        
+    .product-template-default .posts .containerposts {
+        margin-top: 15% !important;
+    }
+        
+    .woocommerce-page .posts .containerposts {
+        margin-top: 25%;
+    }
 	.slider .caption p{
 		display: none;
 	}
@@ -1537,11 +1564,6 @@ p.contenidodos.contenidotres::before {
     background: #ffffff !important;
     }
     
-    
-    .blog .menusecundario {
-    margin-left: -5% !important;
-    }
-    
     .page-blog {
     width: 100% !important;
     margin: 1% !important;
@@ -2127,6 +2149,75 @@ p.contenidodos.contenidotres::before {
 
 @media only screen and (max-width: 1000px) {
 
+/*cambios de luz*/
+.page-header {
+    height: 500px;
+    }
+    
+    .page-template-posts .posts {
+    margin-top: 15% !important;
+    }
+    
+    .page-template-comunidades .posts .containerposts {
+    margin-top: 20% !important;
+    }
+    
+    .product-template-default .posts .containerposts {
+    margin-top: 10% !important;
+    }
+    
+    .page-template-default .products {
+    margin-top: 40px!important;
+    }
+    
+    .woocommerce-page .posts .containerposts {
+    margin-top: 20%;
+    }
+    
+    .woocommerce-loop-product__title {
+    font-size: 12px !important;
+    }
+    
+    .woocommerce-Price-amount {
+    font-size: 10px !important;
+    }
+    
+    .woocommerce ul.products li.product .button {
+    font-size: 10px !important;
+    padding: 10% !important;
+    padding-left: 5% !important;
+    padding-right: 5% !important;
+    }
+    
+    .woocommerce ul.products li.product .woocommerce-LoopProduct-link:after {
+    font-size: 9px !important;
+    padding: 20px 4px!important;
+    text-align: center;
+    line-height: 14px !important;
+    margin-top: 0 !important;
+    }
+    
+    .prdctfltr_filter .prdctfltr_regular_title {
+    font-size: 12px;
+    }
+    
+    .prdctfltr_add_scroll {
+    font-size: 12px;
+    }
+    
+    .prdctfltr_woocommerce.pf_default .prdctfltr_woocommerce_filter_submit {
+    font-size: 10px !important;
+    }
+    
+    .prdctfltr_wc .prdctfltr_buttons {
+    font-size: 10px;
+    }
+    
+    .prdctfltr_wc .prdctfltr_title_selected {
+    font-size: 10px;
+    }
+/*otros cambios*/
+
 /*estilos pagina quienes somos parte 1*/
 
     .quienes-somos p {
@@ -2262,6 +2353,9 @@ p.contenidodos.contenidotres::before {
 @media only screen and (max-width: 850px) {
 
 /*estilos pagina quienes somos*/
+    .page-header {
+        height: 400px;
+    }
     
     .quienes-somos .secciondos {
     height: 400px;
@@ -2476,6 +2570,41 @@ p.contenidodos.contenidotres::before {
 @media only screen and (max-width: 768px) {
   
 /*estilos pagina quienes somos*/
+    img.logo-menusecundario {
+    display:none;
+    }
+
+    img.logo-menusecundario {
+        float: left;
+        margin-top: -20px !important;
+        margin: 15px;
+        width: 15%!important;
+        display: block;
+        height: auto;
+        }
+        
+        .menusecundario .link {
+        color: #000;
+        padding: 15px;
+        }
+        
+        .woocommerce ul.products li.product .woocommerce-LoopProduct-link:after {
+        font-size: 12px !important;
+        margin-top: 35px !important;
+        }
+        
+        .woocommerce-loop-product__title {
+        font-size: 14px !important;
+        }
+        
+        .woocommerce-Price-amount {
+        font-size: 16px !important;
+        }
+        
+        .woocommerce ul.products li.product .button {
+        font-size: 10px !important;
+        padding: 5% !important;
+        }
     .menu-menu-lateral-container {
         margin-bottom: 10px;
         margin-top: 50px;
@@ -2660,6 +2789,14 @@ p.contenidodos.contenidotres::before {
 @media only screen and (max-width: 700px) {
 
 /*estilos Page template*/
+
+    .post-template-default .posts {
+    margin-top: -10% !important;
+    }
+    
+    .woocommerce-page .posts .containerposts {
+    margin-top: 20%;
+    }   
     
     .post-template-default .posts {
     margin-top: 15% !important;
@@ -3350,6 +3487,26 @@ p.contenidodos.contenidotres::before {
 @media only screen and (max-width: 400px) {
 
 /*estilos home parte 1*/
+
+img.logo-menusecundario {
+    width: 21%!important;
+    }
+    
+    .woocommerce-page .posts .containerposts {
+    margin-top: 35%;
+    }
+    
+    .page-template-posts .posts {
+    margin-top: 30% !important;
+    }
+    
+    .product-template-default .posts .containerposts {
+    margin-top: 25% !important;
+    }
+    
+    .page-template-comunidades .posts .containerposts {
+    margin-top: 35% !important;
+    }
     
     .slideshow {
     height: 360px;
@@ -3546,15 +3703,43 @@ p.contenidodos.contenidotres::before {
     color: #7e8e71 !important;
 }
 .prdctfltr_woocommerce_ordering span.prdctfltr_instock span::before{
-    color: #7e8e71 !important;
+    content: '';
+    background-image: url('/app/uploads/2018/06/icon-tienda-02.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 30px !important;
+    height: 30px !important;
+    top: 0 !important;
+    left: -24% !important;
+    position: absolute !important;
+    z-index: 999999999 !important;
+    visibility: visible !important;
 }
 .page-template-default .woocommerce{
     width: 100% !important;
 }
+.prdctfltr_wc span.prdctfltr_instock {
+    margin-right: 9px;
+    padding-left: 25px;
+}
 .prdctfltr_woocommerce_ordering .prdctfltr_sale span:before {
-    color: #7e8e71 !important;
+    content: '';
+    background-image: url('/app/uploads/2018/06/descuento1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 30px !important;
+    height: 30px !important;
+    top: 0 !important;
+    left: -9% !important;
+    position: absolute !important;
+    z-index: 999999999 !important;
+    visibility: visible !important;
+}
+.prdctfltr_wc .prdctfltr_buttons label, .prdctfltr_wc .prdctfltr_buttons span {
+    margin-left: 7px !important;
 }
 .woocommerce-page .button{
+    margin-right: 20px;
     background-color: white !important;
     color: #7E8E71 !important;
     border: 3px solid #7E8E71 !important;
@@ -3572,3 +3757,197 @@ p.contenidodos.contenidotres::before {
     color: white !important;
 }
 /*fin del filtro*/
+/*CAMBIOS DE LUZ 25/06/18*/
+.woocommerce ul.products li.product .woocommerce-LoopProduct-link:after {
+    line-height: 17px!important;
+    text-align: center;
+    }
+    .product-template-default .posts .containerposts {
+    margin-top: 5% !important;
+    }
+    .page-template-comunidades .posts .containerposts {
+    margin-top: 15% !important;
+    }
+    .page-template-comunidades .posts {
+    margin-top: 0 !important;
+    }
+    .woocommerce-page .page-header {
+    display: none;
+    }
+    .woocommerce-message {
+    border-top-color: #7e8e71;
+    }
+    .woocommerce-message::before {
+    content: '\e015';
+    color: #7e8e71;
+    }
+    a.restore-item {
+    color: #7e8e71;
+    font-weight: 600;
+    }
+    a.checkout-button.button.alt.wc-forward {
+    width: 300px !important;
+    }
+    .woocommerce-error::before {
+    content: '\e016';
+    color: #cc5e5d!important;
+    }
+    .woocommerce-error {
+    border-top-color: #cc5e5d;
+    }
+    .woocommerce ul.products li.product a {
+    font-weight: 600;
+    color: #7e8e71;
+    }
+    .select2-container--default .select2-selection--single {
+    border: 1px solid #7e8e71;
+    }
+    .select2-container--default .select2-search--dropdown .select2-search__field {
+    border: 1px solid #7e8e71;
+    }
+    .woocommerce-info {
+    border-top-color: #7e8e71;
+    }
+    .woocommerce-info::before {
+        content: '';
+        background-image: url('/app/uploads/2018/06/shipping-uptaded.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 37px !important;
+        height: 37px !important;
+        top: 8px !important;
+        left: 0 !important;
+        position: absolute !important;
+        z-index: 999999999 !important;
+        visibility: visible !important;
+    }
+    a.shipping-calculator-button {
+    color: #7e8e71 !important;
+    font-weight: 800;
+    border: 2px solid #7e8e71;
+    padding: 1%;
+    font-size: 12px;
+    }
+    .page-template-default .product-name a, .page-template-default .shipping-calculator-button {
+    color: #7e8e71!important;
+    }
+    
+    a.showcoupon {
+    color: #7e8e71;
+    font-weight: 800;
+    }
+    .error404 .page-header {
+    display: none;
+    }
+    .alert.alert-warning {
+    margin-top: 20%;
+    }
+@media only screen and (max-width: 800px) {
+    
+    .woocommerce ul.products li.product .woocommerce-LoopProduct-link:after {
+    margin-top: -5px !important;
+    line-height: 10px !important;
+    }
+
+}
+@media only screen and (max-width: 500px) {
+    img.logo-menusecundario {
+    width: 17% !important;
+    }
+    .woocommerce-page .posts .containerposts {
+    margin-top: 30%;
+    }
+    .woocommerce ul.products li.product .woocommerce-LoopProduct-link:after {
+    font-size: 10px !important;
+    margin-top: 20px !important;
+    }
+    .woocommerce-loop-product__title {
+    font-size: 12px !important;
+    }
+    .woocommerce-Price-amount {
+    font-size: 12px !important;
+    }
+    .woocommerce ul.products li.product .button {
+    font-size: 10px !important;
+    padding: 10% !important;
+    }
+    .onsale:after {
+    height: 35px!important;
+    }
+    .page-template-posts .posts {
+    margin-top: 25% !important;
+    }
+    .product-template-default .posts .containerposts {
+    margin-top: 20% !important;
+    }
+    .page-template-comunidades .posts .containerposts {
+    margin-top: 30% !important;
+    }
+}
+@media only screen and (max-width: 450px) {
+    
+    .page-header {
+    height: 250px;
+    }
+    
+    img.logo-menusecundario {
+    width: 19%!important;
+    }
+    
+    .menusecundario .link {
+    padding: 10px;
+    }
+    
+}
+@media only screen and (max-width: 350px) {
+    
+    .page-header {
+    height: 200px;
+    }
+    
+    img.logo-menusecundario {
+    width: 22%!important;
+    margin-left: 4px !important;
+    margin-top: -8px !important;
+    }
+    
+    .menusecundario .link {
+    padding: 6px;
+    font-size: 9px;
+    }
+    
+    
+}
+.img404{
+    width: 100% ;
+    overflow: hidden;
+}
+.error404 .nrotlf{
+    margin: 0 auto;
+}
+.error404 .containerposts {
+    margin-top:0;
+    padding: 5%;
+
+}
+.error404 .posts{
+    margin-top: -24%;
+}
+.error404 .error{
+    color: #7E8E71;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 80px;
+}
+.error404 .contenedor404{
+    background-size: cover; 
+    height: 557px; 
+    overflow: hidden;
+}
+
+.irtienda{
+    margin-left: 40px;
+}
+
+/*FIN DE LOS CAMBIOOS*/
