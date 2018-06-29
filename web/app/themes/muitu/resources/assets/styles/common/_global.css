@@ -1098,6 +1098,47 @@ p.contenidodos.contenidotres::before {
 
 /*FIN DEL QUIENES SOMOS------------------------------*/
 
+/*Contactanos----------------------------------------*/
+containercontactanos{
+    margin-top: 80px;
+}
+.tituloarribacontac{
+    margin-top: 150px;
+    width: 100%;
+    text-align: center;
+    color: black;
+}
+.titlecontactanos{
+    color: black;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.containertarjeta{
+    padding: 30px;
+    width: 300px;
+    background-color: white;
+}
+.tarjetauna{
+    width: 357px;
+}
+.name{
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.cargo{
+    text-transform: uppercase; 
+}
+.correo{
+
+    width: 137px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+
+
+/*Fin de contactanos---------------------------------*/
 
 /*responsive*/
 
