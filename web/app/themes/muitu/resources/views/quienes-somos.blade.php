@@ -61,23 +61,159 @@
         <h1>Nuestra Determinacion</h1>
         <h2>Proposito</h2>
     </div>
-
 @if(have_rows('seccion_seis', 44))
 {{-- loop through the rows of data --}}
 @while (have_rows('seccion_seis', 44))@php(the_row())
     <div class="parteseis seccionseis">
         <p class="contenidoseis">{{ get_sub_field('containerArriba') }}</p>
         <div class="is-marginless columns is-multiline">
-        
             <div class="primeraimagen column is-4">
-                <img src="{{ get_sub_field('primeraImagen') }}" class="primeraimagen"> 
+                <div class="imagenprimera" style="background:url('{{ get_sub_field('primeraImagen') }}');background-size: cover;
+                height: 100%;"></div>
             </div>
-
-            <div class="containerverde column is-4"></div>	
+            <div class="containercolor column is-4">  
+                <div class="containerverde">
+                    <img src="/app/uploads/2018/06/iso-white.png" class="imglogocolor">
+                </div>
+            </div>	
+            <div class="primeraimagen column is-4">
+                <div class="imagenprimera" style="background:url('{{ get_sub_field('segundaImagen') }}');background-size: cover;
+                height: 100%;"></div>
+            </div>
         </div>
-    </div>
+        <div class="is-marginless columns is-multiline">
+            <div class="containercolor column is-4">  
+                <div class="containermarron containerverde">
+                    <img src="/app/uploads/2018/06/iso-white.png" class="imglogocolor">
+                </div>
+            </div>	
+            <div class="primeraimagen column is-4">
+                <div class="imagenprimera" style="background:url('{{ get_sub_field('terceraImagen') }}');background-size: cover;
+                height: 100%;"></div>
+            </div>
+            <div class="containercolor column is-4">  
+                <div class="containerrosa containerverde">
+                    <img src="/app/uploads/2018/06/iso-white.png" class="imglogocolor">
+                </div>
+            </div>	
+        </div>
+        <div class="is-marginless columns is-multiline">
+            <div class="primeraimagen column is-4">
+                <div class="imagenprimera" style="background:url('{{ get_sub_field('cuartaImagen') }}');background-size: cover;
+                height: 100%;"></div>
+            </div>
+            <div class="containercolor column is-4">  
+                <div class="containerbarro containerverde">
+                    <img src="/app/uploads/2018/06/iso-white.png" class="imglogocolor">
+                </div>
+            </div>
+            <div class="primeraimagen column is-4">
+                <div class="imagenprimera" style="background:url('{{ get_sub_field('quintaImagen') }}');background-size: cover;
+                height: 100%;"></div>
+            </div>	
+        </div>
+        <p class="contenidoseis contenidoabajo">{{ get_sub_field('contenidoAbajo') }}</p>	
+    </div>    
+</div>
+<div class="tresimg is-marginless columns is-multiline">
+    <div class="column is-4 is-paddingless">
+    <div class="imagenprimera " style="background:url('{{ get_sub_field('primeraImagenAbajo') }}');background-size: cover;
+    height: 300px;"></div></div>
+
+    <div class="column is-4 is-paddingless">
+    <div class="imagenprimera" style="background:url('{{ get_sub_field('segundaImagenAbajo') }}');background-size: cover;
+    height: 300px;"></div></div>
+
+    <div class="column is-4 is-paddingless">
+    <div class="imagenprimera" style="background:url('{{ get_sub_field('terceraImagenAbajo') }}');background-size: cover;
+    height: 300px; "></div></div>
+</div>
 @endwhile
 @else      
 @endif
-</div>
+
+<div class="partedos">
+    <div class="titleseccionseis">
+        <h1>Nuestro Cometido</h1>
+        <h2>Mision</h2>
+    </div>
+    @if(have_rows('seccion_siete', 44))
+    {{-- loop through the rows of data --}}
+    @while (have_rows('seccion_siete', 44))@php(the_row())
+        <div class="parteseis seccionseis">
+            <p class="contenidoseis">{{ get_sub_field('contenidoArriba') }}</p>
+            <div class="contenedorimg is-marginless columns is-multiline">
+                <div class="imgcentral has-text-centered columns">
+                    <div class="secundariaimg column is-4 is-paddingless">
+                        <div class="imagenprimera" style="background:url('{{ get_sub_field('primeraImagen') }}');background-size: cover;
+                        height: 100%;"></div>
+                    </div>
+                    <div class="primeraimagen column is-4 is-paddingless">
+                        <div class="imagenprimera imagenmedio" style="background:url('{{ get_sub_field('segundaImagen') }}');background-size: cover;
+                        height: 100%;"></div>
+                    </div>
+                    <div class="secundariaimg column is-4 is-paddingless">
+                        <div class="imagenprimera" style="background:url('{{ get_sub_field('terceraImagen') }}');background-size: cover;
+                        height: 100%;"></div>
+                    </div>
+                </div>
+            </div>
+            <p class="contenidoseis contenidoabajo">{{ get_sub_field('contenido_abajo') }}</p>
+        </div>
+        </div>
+        <div class="tresimg is-marginless columns is-multiline">
+            <div class="column is-4 is-paddingless">
+                <div class="imagenprimera " style="background:url('{{ get_sub_field('primeraImagenAbajo') }}');background-size: cover;
+                height: 300px;"></div>
+            </div>
+            <div class="column is-4 is-paddingless">
+                <div class="imagenprimera" style="background:url('{{ get_sub_field('segundaImagenAbajo') }}');background-size: cover;
+                height: 300px;"></div>
+            </div>
+            <div class="column is-4 is-paddingless">
+                <div class="imagenprimera" style="background:url('{{ get_sub_field('terceraImagenAbajo') }}');background-size: cover;
+                height: 300px; "></div>
+            </div>
+        </div>
+    @endwhile
+    @else      
+    @endif  
+
+    <div class="partedos">
+        <div class="titleseccionseis">
+            <h1>Nuestro Perspectiva</h1>
+            <h2>Vision</h2>
+        </div>
+        @if(have_rows('seccion_ocho', 44))
+        {{-- loop through the rows of data --}}
+        @while (have_rows('seccion_ocho', 44))@php(the_row())
+            <div class="parteseis seccionseis">
+                <p class="contenidoseis">{{ get_sub_field('contenidoArriba') }}</p>
+                <div class="contenedorimg is-marginless columns is-multiline">
+                    <div class="central column ">
+                        <div class="imagenprimera" style="background:url('{{ get_sub_field('imagenCentral') }}');background-size: cover;
+                        height: 100%;"></div>
+                    </div>
+                </div>
+                <p class="contenidoseis">{{ get_sub_field('contenidoAbajo') }}</p>
+            </div>        
+        </div>
+        <div class="tresimg is-marginless columns is-multiline">
+                <div class="column is-4 is-paddingless">
+                    <div class="imagenprimera " style="background:url('{{ get_sub_field('primeraImagenAbajo') }}');background-size: cover;
+                    height: 300px;"></div>
+                </div>
+                <div class="column is-4 is-paddingless">
+                    <div class="imagenprimera" style="background:url('{{ get_sub_field('segundaImagenAbajo') }}');background-size: cover;
+                    height: 300px;"></div>
+                </div>
+                <div class="column is-4 is-paddingless">
+                    <div class="imagenprimera" style="background:url('{{ get_sub_field('terceraImagenAbajo') }}');background-size: cover;
+                    height: 300px; "></div>
+                </div>
+            </div>       
+        @endwhile
+        @else      
+        @endif          
+ 
 @endsection

@@ -1018,6 +1018,17 @@ p.contenidodos.contenidotres::before {
     width: 10%;
     border-top: 3px solid white;
 }
+.imgseccion{
+    overflow: hidden;
+}
+.imgseccion img{
+    position: relative;
+    width: 1000px !important;
+    height: 1000px;
+    max-width: none;
+    overflow: hidden;
+    margin-left: -206px;
+}
 .titleseccionseis{
     text-align: center;
 
@@ -1033,6 +1044,7 @@ p.contenidodos.contenidotres::before {
     color:#B0834A;
 }
 .contenidoseis{
+    width: 100%;
     font-size: 16px !important;
     margin-top: 50px;
 }
@@ -1040,9 +1052,50 @@ p.contenidodos.contenidotres::before {
     height: 240px;
 }
 .containerverde{
+    text-align: center;
+    height: 217px;
     background-color: #7A8769;
+}
+.imglogocolor{
+    margin-top: 74px;
+    height: 70px;
+}
+.containermarron{
+    background-color: #826E49;
+}
+.containerrosa{
+    background-color: #DC7A79;
+}
+.containerbarro{
+    background-color: #8B4521;
+}
+.contenidoabajo{
+    margin-top: 60px;
+}
+.secundariaimg{
+    margin-top: 5px;
+    width: 275px !important;
+    height: 200px;
+}
+.imgcentral{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.imagenmedio{
     height: 240px;
 }
+.contenidoabajo{
+    margin-top: 70px;
+}
+.central{
+    margin-top: 5px;
+    width: 275px !important;
+    height: 530px;
+}
+
 /*FIN DEL QUIENES SOMOS------------------------------*/
 
 
