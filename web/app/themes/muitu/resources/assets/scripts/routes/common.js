@@ -21,12 +21,17 @@ export default {
           $('.menuprimario').removeClass("content-menu2"), 1000;
           show = 1;
         }
-
-        //$('.menuprimario').slideToggle();
-        //$(".menuprimario").animate({width:'toggle', paddingLeft: 'toggle',paddingRight: 'toggle'},350);
-        //$(".menuprimario").toggle('slide', {direction: 'right'}, 1000);
       });
-    })
+    });
+
+
+
+    if ($('.woocommerce-info').length == 0) 
+      $(".checkout-button").css({"pointer-events" : "none"});
+    else 
+    if ($('.woocommerce-info').length > 0)     
+      $(".checkout-button").css({"pointer-events" : "auto"});
+
   },
   finalize() {
     // JavaScript to be fired on all pages, after page specific JS is fired

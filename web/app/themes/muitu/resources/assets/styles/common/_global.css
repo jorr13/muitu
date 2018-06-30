@@ -1522,7 +1522,9 @@ p.contenidodos.contenidotres::before {
     word-break: break-word;
     }
     
-
+    body, html {
+    background: #f3ece2;
+    }
     
     .posts .containerposts {
     margin-top: 5%;
@@ -3814,9 +3816,9 @@ img.logo-menusecundario {
         background-image: url('/app/uploads/2018/06/shipping-uptaded.png');
         background-size: contain;
         background-repeat: no-repeat;
-        width: 37px !important;
+        width: 27px !important;
         height: 37px !important;
-        top: 8px !important;
+        top: 13px !important;
         left: 0 !important;
         position: absolute !important;
         z-index: 999999999 !important;
@@ -3950,5 +3952,19 @@ img.logo-menusecundario {
 .irtienda{
     margin-left: 40px;
 }
+.woocommerce .input-text {
+    width: 100% !important;
+}
+.col-1{
+    float: none !important;
+    width: 100% !important;
+}
+.col-2{
+    float: none !important;
+    width: 100% !important;
+}
 
+.page-template-default #coupon_code {
+    width: 162px !important;
+}
 /*FIN DE LOS CAMBIOOS*/
