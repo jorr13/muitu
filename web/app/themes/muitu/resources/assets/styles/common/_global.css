@@ -1,6 +1,4 @@
-
 html,body {
-    background: #F1EFF0;
     margin: 0;
     padding: 0;
     letter-spacing: 2px !important;
@@ -47,6 +45,9 @@ logosheader{
     height:  100vh;
     text-align: justify;
     transition: 0.5s;
+}
+ .logo-menusecundario{
+display: none;
 }
 .menuprimario .menu{
     text-align: center;
@@ -863,6 +864,7 @@ opacity: 1 !important;
 }
 @media screen and (max-width: 600px){
     img .logo-menusecundario {
+        height: 100%;
         margin-top: -15px !important;
     }
         
@@ -1520,9 +1522,7 @@ p.contenidodos.contenidotres::before {
     word-break: break-word;
     }
     
-    body, html {
-    background: #f3ece2 !important;
-    }
+
     
     .posts .containerposts {
     margin-top: 5%;
@@ -2570,9 +2570,10 @@ p.contenidodos.contenidotres::before {
 @media only screen and (max-width: 768px) {
   
 /*estilos pagina quienes somos*/
-    img.logo-menusecundario {
+    img .logo-menusecundario {
     display:none;
     }
+
 
     img.logo-menusecundario {
         float: left;

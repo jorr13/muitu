@@ -1,32 +1,25 @@
 @extends('layouts.app')
-
 @section('content')
-
   <!--slider-->
   <div class="slideshow">
 		<div class="tituloslider">
 			<h1>Productos recientes</h1>
-		</div>
-		<ul class="slider"> 
-      @foreach($products_loop as $products)
-			<li>
-			<div class="sliderimagen">
-        <!--Esto es el thumb-->
-        {!! $products['thumbnail'] !!}
-			</div>
-				<section class="caption">
-					<h1>{!! $products['title'] !!}</h1>
-          <p>{!! $products['excerpt'] !!}</p>
-
-          <a href=" {!! $products['link'] !!}" class="botonfooter">Ver Producto</a>
-        </section>
-      </li>
-      @endforeach
+    </div>
+		<ul class="slider">
+         @foreach($products_loop as $products)
+            <li>
+                <div class="sliderimagen">
+                    <!--Esto es el thumb-->
+                    {!! $products['thumbnail'] !!}
+                </div>
+                <section class="caption">
+                    <h1>{!! $products['title'] !!}</h1>
+                    <p>{!! $products['excerpt'] !!}</p>
+                    <a href=" {!! $products['link'] !!}" class="botonfooter">Ver Producto</a>
+                </section>
+            </li>
+        @endforeach
     </ul>
-		<ol class="pagination">
-      	
-		</ol>
-		
 		<div class="right">
 			<span class="fa fa-chevron-right"><img src="/app/uploads/2018/06/rigth.png" alt=""></span>
         </div>
