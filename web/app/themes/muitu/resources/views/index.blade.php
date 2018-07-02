@@ -60,7 +60,7 @@
   
       <h1 class="titlenuevo">Lo nuevo de la tienda</h1>
 
-  <div class="posts"> 
+  <div class="posts newproduct"> 
       <div class="containerposts containerselec columns is-multiline">
           <a href="#" id="clickhamacas" class="column is-3">HAMACAS</a>
           <a href="#" id="clickbolsos" class="column is-3">BOLSOS</a>

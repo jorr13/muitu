@@ -82,9 +82,8 @@ export default {
         $('#bolsos, #hamacas, #cinturones, #pulceras').fadeOut();
         $('#pulceras').fadeToggle();        
       });
+    },
 
-
-  },
   finalize() {
     // JavaScript to be fired on the home page, after the init JS
   },

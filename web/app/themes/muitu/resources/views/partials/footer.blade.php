@@ -5,8 +5,8 @@
 	    	<div class="footeruno column is-4 is-center">
 	    		<img class="logofooter" src="{{ home_url('/app/uploads/2018/06/Logo-01-1-768x775.png') }}" alt="">
 	    		<ul>
-	    			<li><a href="">Quienes somos</a></li>
-	    			<li><a href="">Comunidades</a></li>
+	    			<li><a href="/quienes-somos">Quienes somos</a></li>
+	    			<li><a href="/comunidades">Comunidades</a></li>
 	    			<li><a href="">Condiciones de venta</a></li>
 	    			<li><a href="">Informacion de privacidad</a></li>
 	    		</ul>

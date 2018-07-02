@@ -8,6 +8,10 @@ html,body {
 logosheader{
     width: 20px;
 }
+.logomenuprimario{
+    margin-left: 28px;
+    width:50%;
+}
 .menu-menu-lateral-container{
     margin: 0px;
     text-align: left;
@@ -350,6 +354,20 @@ footer .container {
 /*footeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeer*/
 
 /*POSTS-----------------------------------------------*/
+
+.newproduct{
+    height: 540px;
+
+}
+.containerproduct{ 
+    margin-top: 0 !important;   
+    height: 460px;
+    padding: 30px;
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+    width: 100%;
+}
 .titlearriba{
     margin-top: 40px;
     text-align: center;
@@ -479,10 +497,9 @@ a.link.posts-link {
 /*FIN POSTS-----------------------------------------------*/
 
 /*CARRITOOOOOOOOOOOOOOOOOOOOOOO--------------------------*/
-.page-template-default .containerposts{
-    padding: 50px;
-}
+
 .product-template-default .containerposts{
+    margin-top: 80px;
     padding: 50px;
 }
 .updated, .byline{
@@ -1099,8 +1116,16 @@ p.contenidodos.contenidotres::before {
 /*FIN DEL QUIENES SOMOS------------------------------*/
 
 /*Contactanos----------------------------------------*/
-containercontactanos{
-    margin-top: 80px;
+#registrar-usuario{
+    margin-left: 15%;
+}
+.containercontactanos{
+    position: relative;
+    padding: 60px;
+    padding-left: 110px;
+}
+.modal-card{
+    width: 560px;
 }
 .tituloarribacontac{
     margin-top: 150px;
@@ -1114,12 +1139,16 @@ containercontactanos{
     text-transform: uppercase;
 }
 .containertarjeta{
+    height: 350px;
     padding: 30px;
     width: 300px;
     background-color: white;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2) !important;
+    margin-top: 45px;
+    position: relative;
+    z-index: 8;
 }
 .tarjetauna{
-
     position: relative;
 }
 .fondoimg{
@@ -1128,11 +1157,12 @@ containercontactanos{
     background-repeat: no-repeat;
     visibility: visible !important;
     width: 230px;
-    height: 370px;
+    height: 435px;
     position: absolute;
     z-index: 7;
     margin-left: 30px;
 }
+
 .tarjetauna:nth-of-type(3n+1) .fondoimg{
     background-image: url('/app/uploads/2018/06/fondo-blog-1.jpg');
 }
@@ -1141,12 +1171,6 @@ containercontactanos{
 }
 .tarjetauna:nth-of-type(3n+3) .fondoimg{
     background-image: url('/app/uploads/2018/06/contact-bg-3.jpg');
-}
-.containertarjeta{
-    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2) !important;
-    margin-top: 45px;
-    position: relative;
-    z-index: 8;
 }
 .containertarjeta .name{
     font-size: 21px;
@@ -1179,7 +1203,105 @@ containercontactanos{
     font-size: 15px;
 }
 
+.contacto{
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 8px 15px;
+    color: black;
+    position: absolute;
+    bottom: 0;
+    border: 3px solid black;
+    text-align: center;
+    margin-top: 20px;
+    display: block;
+    margin-bottom: 30px;
+    transition: 0.5s;
+}
+.contacto:hover{
+    transition: 0.5s;
+    color: white;
+    background: black;
+}
+.tarjetaabajo{
+    position: relative;
+    padding: 40px;
+    z-index: 9;
+    background: white;
+    max-width: 900px;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2) !important;
+    margin: 2px auto;
+    text-align: center;
+    justify-content: center;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+}
+.titlecontacabajo{
+    margin-top: 88px;
+    padding-bottom: 20px;
 
+}
+.modal-card-body .nombremodal, .modal-card-body .emailmodal, .modal-card-body .tlfmodal, .containermensaje{
+    padding: 10px;
+    margin-top: 10px;
+    padding-bottom: 15px;
+    width: 510px;
+    border-style: none;
+    border-bottom: 1px solid black;
+    font-size: 20px;
+    z-index: 9999999999999999999;
+}
+.modal-card-title{
+    margin-top: 22px !important; 
+}
+.modal-background{
+    position: absolute;
+    z-index: 99999999999999;
+    background-color: rgba(0, 0, 0, 0.30) !important;
+}
+.modal-card{
+    z-index: 9999999999999999;
+}
+.imgmodal{
+    margin-top: 0%;
+    width: 8%;
+}
+.logomodal{
+    width: 49px;
+}
+.modal-card-body::before, .modal-card-body::after  {
+
+    mask:url('/app/uploads/2018/06/muitu-iso-01.svg') ;
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    opacity: 0.1;
+    content:"";
+    position: absolute;
+    left: 0;
+    top: calc( 50% - 100px);
+    transform: translate(-50%, -50%);
+    height: 350px;
+    width: 350px;
+    background: black;
+
+}
+.modal-card-body::after {
+  top: calc( 50% + 150px);
+  background: white;
+}
+.modal-card-body::before{
+   left: inherit;
+   right: 0;
+   transform: translate(50%, -18%);
+}
+.botonmodal{
+    margin-left: 40%;
+}
+.modal-card-title{
+    text-align: center;
+
+}
 
 /*Fin de contactanos---------------------------------*/
 
