@@ -634,31 +634,99 @@ a.link.posts-link {
     visibility: hidden!important; 
 }
 .product-template-default .related{
-    margin-top: 50% !important;
+    margin-top: 20% !important;
 }
-.product-template-default .woocommerce-Tabs-panel p{
-   float: right;
-    margin-right: 17% !important;
-}
-.product-template-default .woocommerce-Tabs-panel h2{
-    float: right;
-     margin-right: 28% !important;
- }
+
 .product-template-default .product_type_simple {
+    float: right;
     background-color: white !important;
     color: #7E8E71 !important;
     border: 3px solid #7E8E71 !important;
     text-align: center !important;
     font-size: 12px !important;
     text-transform: uppercase !important;
-    padding: 17px 13px !important;
     line-height: 2px !important;
     border-radius: 0 !important;
     transition: 0.5s
 }
+.page-id-7 .add_to_cart_button{
+    background-image: url('/app/uploads/2018/06/icon-tienda-02.png') !important;
+    width: 45px !important;
+    height: 45px !important;
+    background-size: 29px !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    padding: 5% !important;
+    float: right !important;
+    transition: 0.5s;
+}
+.product-template-default .add_to_cart_button  {
+    background-image: url('/app/uploads/2018/06/icon-tienda-02.png') !important;
+    width: 45px !important;
+    height: 45px !important;
+    background-size: 29px !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    padding: 5% !important;
+    float: right !important;
+    transition: 0.5s;
+}
+.product-template-default .add_to_cart_button:hover {
+    background-image: url('/app/uploads/2018/06/icon-tienda-03.png') !important;
+    width: 45px !important;
+    height: 45px !important;
+    background-size: 29px !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    padding: 5% !important;
+    float: right !important;
+    transition: 0.5s;
+
+}
+.page-id-7 .add_to_cart_button:hover {
+    background-image: url('/app/uploads/2018/06/icon-tienda-03.png') !important;
+    width: 45px !important;
+    height: 45px !important;
+    background-size: 29px !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    padding: 5% !important;
+    float: right !important;
+    transition: 0.5s;
+
+}
+.product-template-default .single_add_to_cart_button  {
+    color:#7E8E71;
+    text-align: center !important;
+    width: 100% !important;
+    background-size: 29px !important;
+    background-position: center !important;
+    background-repeat: no-repeat;
+    padding: 18px 21px !important;
+    transition: 0.5s;
+    margin: 0 auto !important;
+
+}
+h2.woocommerce-loop-product__title {
+    height: 60px!important;
+}
+.product-template-default .single_add_to_cart_button:hover {
+    transition: 0.5s;
+    color: transparent !important;
+    background-image: url('/app/uploads/2018/06/icon-tienda-03.png') !important;
+    width: 100% !important;
+    background-size: 29px !important;
+    background-position: center !important;
+    background-repeat: no-repeat!important;
+    padding: 18px 21px !important;
+
+    margin: 0 auto !important;
+
+}
+
 .product-template-default .product_type_simple:hover{
     transition: 0.5s !important;
-    background: #7E8E71 !important;
+    background-color: #7E8E71 !important;
     color: white !important;
 }
 .product-template-default .submit, .post-template-default .submit{
@@ -687,33 +755,33 @@ a.link.posts-link {
 .page-template-default button[name=update_cart] {
     display: none;
 }
-.woocommerce ul.products li.product .woocommerce-LoopProduct-link::after{
-    content: "Ver producto";
+.verproductoshop{
+    bottom: 0;
     position: absolute;
-    top: 17%;
-    height: 13%;
-    width: 81%;
+    height: 45px !important;
+    width: 73%;
     z-index: 99;
     display: flex;
-    margin :10%;
     align-items: center;
     justify-content: center;
-    transition: 0.5s ease-in;
-    color: white;
     opacity: 0;
     background-color: white !important;
     color: #7E8E71 !important;
     border: 3px solid #7E8E71 !important;
-    font-size: 12px !important;
+    font-size: 10px !important;
     text-transform: uppercase !important;
-    padding: 17px 13px !important;
+    padding: 16px 13px !important;
     line-height: 2px !important;
     border-radius: 0 !important;
     font-weight: 700;
+    opacity: 1 !important;
+    transition: 0.5s;
 
 }
-.woocommerce ul.products li.product .woocommerce-LoopProduct-link:hover::after {
-opacity: 1 !important;
+.verproductoshop:hover{
+    color: white!important;
+    transition: 0.5s;
+    background-color: #7E8E71 !important;
 }
 
 /*FIN DEL CARITOOOOOOOOOOOOOOOOOO--------------------------*/
@@ -2198,7 +2266,6 @@ p.contenidodos.contenidotres::before {
     line-height: 14px !important;
     margin-top: 0 !important;
     }
-    
     .prdctfltr_filter .prdctfltr_regular_title {
     font-size: 12px;
     }
@@ -3741,7 +3808,7 @@ img.logo-menusecundario {
 .prdctfltr_wc .prdctfltr_buttons label, .prdctfltr_wc .prdctfltr_buttons span {
     margin-left: 7px !important;
 }
-.woocommerce-page .button{
+.woocommerce-page .prdctfltr_woocommerce_filter_submit{
     margin-right: 20px;
     background-color: white !important;
     color: #7E8E71 !important;
@@ -3749,12 +3816,12 @@ img.logo-menusecundario {
     text-align: center !important;
     font-size: 12px !important;
     text-transform: uppercase !important;
-    padding: 17px 13px !important;
+    padding: 17px 13px  ;
     line-height: 4px !important;
     border-radius: 0 !important;
     transition: 0.5s
 }
-.woocommerce-page .button:hover{
+.woocommerce-page .prdctfltr_woocommerce_filter_submit:hover{
     transition: 0.5s !important;
     background: #7E8E71 !important;
     color: white !important;

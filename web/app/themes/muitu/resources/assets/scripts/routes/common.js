@@ -27,7 +27,9 @@ export default {
 
 
     if ($('.woocommerce-info').length == 0) 
-      $(".checkout-button").css({"pointer-events" : "none"});
+      $(".checkout-button").css({"pointer-events" : "none"}),
+      $(".checkout-button").css({"color" : "#D0D0D0"}),
+      $(".checkout-button").css({"border" : "3px solid #D0D0D0"});
     else 
     if ($('.woocommerce-info').length > 0)     
       $(".checkout-button").css({"pointer-events" : "auto"});
