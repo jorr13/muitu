@@ -525,7 +525,7 @@ a.link.posts-link {
 }
 
 .page-template-default .products{
-    margin-top: 90px !important;
+    margin-top: 90px ;
 }
 .page-template-default .button{
     background-color: white !important;
@@ -698,7 +698,7 @@ a.link.posts-link {
 .product-template-default .single_add_to_cart_button  {
     color:#7E8E71;
     text-align: center !important;
-    width: 100% !important;
+
     background-size: 29px !important;
     background-position: center !important;
     background-repeat: no-repeat;
@@ -714,7 +714,6 @@ h2.woocommerce-loop-product__title {
     transition: 0.5s;
     color: transparent !important;
     background-image: url('/app/uploads/2018/06/icon-tienda-03.png') !important;
-    width: 100% !important;
     background-size: 29px !important;
     background-position: center !important;
     background-repeat: no-repeat!important;
@@ -4034,4 +4033,45 @@ img.logo-menusecundario {
 .page-template-default #coupon_code {
     width: 162px !important;
 }
+
+.contenedorbotones{
+    margin: 0 auto;
+    padding-top: 20px;
+}
+.page-id-7  .first {
+    display: none !important ;
+    clear: both;
+}
+
+.woocommerce ul.products li.product, .woocommerce-page ul.products li.product {
+    float: left !important ;
+    margin: 1.4%;
+    padding: 0 !important ;
+    position: relative!important ;
+    width: 22.05%!important ;
+    margin-left: none !important ;
+}
+
+.page-template-default .prdctfltr-added-wrap{
+    margin-top: 0 !important;
+}
+.shipping-calculator-form{
+    margin-top: 10px !important;
+}
+.content blockquote:not(:last-child), .content dl:not(:last-child), .content ol:not(:last-child), .content p:not(:last-child), .content pre:not(:last-child), .content table:not(:last-child), .content ul:not(:last-child) {
+    margin-bottom: 0;
+ }
+.botonbloquiado{
+    background-color: #fff!important;
+    border-radius: 0!important;
+    pointer-events: none;
+    color: rgb(208, 208, 208);
+    border: 3px solid rgb(208, 208, 208);
+    font-size: 12px!important;
+    line-height: 4px!important;
+    padding: 17px 13px!important;
+    text-align: center!important;
+    text-transform: uppercase!important;
+    transition: .5s;
+ }
 /*FIN DE LOS CAMBIOOS*/
