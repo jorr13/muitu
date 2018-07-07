@@ -1304,7 +1304,16 @@ p.contenidodos.contenidotres::before {
 }
 
 /*Fin de contactanos---------------------------------*/
+/*CONDICIONES-----------------------------------------*/
+.postscomu{
+    margin-top: 170px !important;
+}
+.condiciones{
+    padding: 30px;
+}
 
+
+/*FIN DE CONDCIONES-----------------------------------*/
 /*responsive*/
 
 @media only screen and (max-width:768px){
