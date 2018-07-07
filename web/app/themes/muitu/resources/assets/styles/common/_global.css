@@ -1472,7 +1472,7 @@ p.contenidodos.contenidotres::before {
     
     .quienes-somos .secciondos{
     margin-top: 0;
-    height: 600px;
+    height: 550px;
     }
 
     .imgparteuno img {
@@ -1494,7 +1494,7 @@ p.contenidodos.contenidotres::before {
     }
     
     .quienes-somos .secciondos:after, .quienes-somos .secciondos:before {
-    margin-top: -5px;
+    margin-top: 13px;
     }
 
 /*estilos pagina quienes somos parte 2*/
@@ -2071,7 +2071,15 @@ p.contenidodos.contenidotres::before {
 }
 
 @media only screen and (max-width: 1100px) {
-
+    .imgparteuno img {
+        margin-top: 18%;
+    }
+    .contenidopartedos h1{
+        margin-top: 13px
+    }
+    .contenidopartedos h1:after {
+        top: 92%;
+    }
 /*estilos Page template*/
     
     .format-standard h1 {
@@ -2403,7 +2411,7 @@ p.contenidodos.contenidotres::before {
     
     .footer{
     height: 500px;
-    margin-top: -113px;
+    margin-top: -22px !important;
     padding-top: 20px;
     }
 
@@ -2426,6 +2434,7 @@ p.contenidodos.contenidotres::before {
     }
     
     .quienes-somos .secciondos {
+    margin-top: 83px;   
     height: 400px;
     }
     
@@ -2629,6 +2638,9 @@ p.contenidodos.contenidotres::before {
 @media only screen and (max-width: 780px) {
 
 /*estilos seccion blog*/
+.quienes-somos .secciondos:after, .quienes-somos .secciondos:before {
+    margin-top: 26px;
+}
 
     .page-blog .posts {
     margin: 0% !important;
@@ -2753,7 +2765,7 @@ p.contenidodos.contenidotres::before {
     
     .contenidopartedos h1 {
     font-size: 40px;
-    margin-top: 10px;
+    margin-top: 35px;
     }
     
     .contenedorsecciondos .contendos {
@@ -2970,8 +2982,19 @@ p.contenidodos.contenidotres::before {
     .titlesecciondos {
     font-size: 18px !important;
     }
-    
+    .tresimg .imagenprimera {
+        height: 200px !important;
+    }
+    .imagenmedio{
+    height: 200px !important;
+    margin-top: 38px;
+
+    }
+    .contenedorimg .imgcentral .primeraimagen{
+        box-shadow: 0px 0px 0px 0px !important;
+    }
     .contenidodos {
+    margin-top: -48%;
     font-size: 10px;
     }
     
@@ -3320,6 +3343,12 @@ p.contenidodos.contenidotres::before {
 }
 
 @media only screen and (max-width: 530px) {
+    .contenidopartedos h1 {
+        margin-top: 51px;
+    }
+    .contenidopartedos h1:after {
+        top: 100%;
+    }
 
     .post-template-default .posts {
     margin-top: 20% !important;
@@ -3638,7 +3667,7 @@ img.logo-menusecundario {
     }
     
     .contenedorsecciondos .imgseccion {
-    margin-top: -39% !important;
+    margin-top: -30% !important;
     }
     
 /*estilos home parte Blog*/
@@ -4074,4 +4103,18 @@ img.logo-menusecundario {
     text-transform: uppercase!important;
     transition: .5s;
  }
+ .modalactiva{
+    opacity: 1;
+    transition: 0.5s;
+ }
+ .modalcerrada{
+    opacity: 0;
+    transition: 0.5s;
+ }
+.modal-card{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 /*FIN DE LOS CAMBIOOS*/

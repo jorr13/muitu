@@ -23,13 +23,13 @@
                     <p class="correo">{{ get_sub_field('correo_electronico') }}</p>
                     <p class="dominio">{{ get_sub_field('dominio') }}</p>
                     <h1 class="telefono">{{ get_sub_field('numero_telefonico') }}</h1>
-                    <a class="contacto" href="#" >Contactar</a>
+                    <a class="contacto" data-email="{{ get_sub_field('repetircorreo') }}" href="#" >Contactar</a>
                 </div>
-            </div>      
+            </div>       
         @endwhile 
         @else      
         @endif
-        <div id="registrar-usuario" class="modal">
+        <div id="registrar-usuario" class="modal .modalcerrada">
             <div class="modal-background"></div>
             <div class="modal-card">
                 <header class="modal-card-head">
@@ -40,13 +40,14 @@
                     <button id="cerrar" class="delete" aria-label="close"></button>
                 </header>
                 <section class="modal-card-body">
-                    <input class="nombremodal"  placeholder="Su nombre" type="text">
-                    <input class="emailmodal"  placeholder="Su email" type="text">
-                    <input class="tlfmodal" placeholder="Numero de telefono" type="text" >
-                    <textarea class="containermensaje"  placeholder="Su mensaje"></textarea>
+                    <input class="nombremodal"  placeholder="Su nombre" id="nombre" type="text">
+                    <input class="emailmodal"  placeholder="Su email" id="emailcliente" type="text">
+                    <input id="email-receptor" type="hidden" name="" id="" value="email">
+                    <input class="tlfmodal" placeholder="Numero de telefono" id="telefono" type="text" >
+                    <textarea class="containermensaje" id="mensaje" placeholder="Su mensaje"></textarea>
                 </section>
                 <footer class="modal-card-foot">
-                <a href="#" class="botonproducto botonmodal">Enviar</a>   
+                <a href="#" id="submitemail" class="botonproducto botonmodal">Enviar</a>   
                 </footer>
             </div>
         </div>

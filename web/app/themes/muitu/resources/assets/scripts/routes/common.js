@@ -2,11 +2,14 @@ export default {
   init() {
     $(".contacto").click(function (e) { 
       e.preventDefault();
-      $("#registrar-usuario").addClass("is-active");
+      var email = $(this).data('email');
+      console.log(email);
+      $("#registrar-usuario").fadeIn();
+      $("#registrar-usuario #email-receptor").val(email);
     });
-    $("#cerrar").click(function (e) { 
+    $("#cerrar, .modal-background").click(function (e) { 
       e.preventDefault();
-      $("#registrar-usuario").removeClass("is-active");
+      $("#registrar-usuario").fadeOut();
     });
 
     $(document).ready(function(){
@@ -26,14 +29,40 @@ export default {
 
 
 
-    if ($('.woocommerce-info').length == 0) 
-      $(".checkout-button").css({"pointer-events" : "none"}),
-      $(".checkout-button").css({"color" : "#D0D0D0"}),
-      $(".checkout-button").css({"border" : "3px solid #D0D0D0"});
+    if ($('.woocommerce-info').length == 0)
+      $(".checkout-button").removeClass("button "),
+      $(".checkout-button").addClass("botonbloquiado");
+
     else 
     if ($('.woocommerce-info').length > 0)     
-      $(".checkout-button").css({"pointer-events" : "auto"});
-
+    $(".checkout-button").removeClass("botonbloquiado");
+//para enviar correo
+// Aqui va el script para el form del footer
+$("#submitemail").click(function (e) {
+  e.preventDefault();
+  var name = $("#nombre").val();
+  var email = $("#emailcliente").val();
+  var telefono = $("#telefono").val();
+  var mensaje = $("#mensaje").val();
+  $("#returnmessage").empty(); // To empty previous error/success message.
+  // Checking for blank fields.
+  if (name == '' || email == '' || telefono == ''|| mensaje == '') {
+    alert("Porfavor llene todos los campos antes de enviar el mensaje");
+  } else {
+    // Returns successful data submission message when the entered information is stored in database.
+    $.post("https://www.muituhandmade.com/extras/contact_form.php", {
+      name1: name,
+      email1: email,
+      telefono1: telefono,
+      mensaje1: mensaje,
+    }, function (data) {
+      $("#returnmessage").append(data); // Append returned message to message paragraph.
+      if (data == "Thank you. We'll be in contact very soon.") {
+        $("#subscription-form")[0].reset(); // To reset form fields on success.
+      }
+    });
+  }
+});
   },
   finalize() {
     // JavaScript to be fired on all pages, after page specific JS is fired
