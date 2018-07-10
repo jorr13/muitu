@@ -183,3 +183,16 @@ function pulcerasLoop()
 
     //Jugueticos para hacer mas rico todo
     add_post_type_support( 'page', 'excerpt' );
+
+    //Juguetico del sidebar
+
+    add_filter('sage/display_sidebar', function ($display) {
+        static $display;
+    
+        isset($display) || $display = in_array(true, [
+          // The sidebar will be displayed if any of the following return true
+          is_woocommerce(),
+        ]);
+    
+        return $display;
+    });

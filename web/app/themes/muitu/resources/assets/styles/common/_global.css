@@ -685,10 +685,9 @@ a.link.posts-link {
 }
 .woocommerce ul.products li.product .woocommerce-LoopProduct-link::after{
     content: "Ver producto";
-    background-color: rgba(0,0,0,0.6);
     position: absolute;
-    top: 0;
-    height: 59%;
+    top: 85px;
+    height: 13%;
     width: 100%;
     z-index: 99;
     display: flex;
@@ -697,6 +696,16 @@ a.link.posts-link {
     transition: 0.5s ease-in;
     color: white;
     opacity: 0;
+    background-color: white !important;
+    color: #7E8E71 !important;
+    border: 3px solid #7E8E71 !important;
+    font-size: 12px !important;
+    text-transform: uppercase !important;
+    padding: 17px 13px !important;
+    line-height: 2px !important;
+    border-radius: 0 !important;
+    font-weight: 700;
+
 }
 .woocommerce ul.products li.product .woocommerce-LoopProduct-link:hover::after {
 opacity: 1 !important;
