@@ -683,6 +683,25 @@ a.link.posts-link {
 .page-template-default button[name=update_cart] {
     display: none;
 }
+.woocommerce ul.products li.product .woocommerce-LoopProduct-link::after{
+    content: "Ver producto";
+    background-color: rgba(0,0,0,0.6);
+    position: absolute;
+    top: 0;
+    height: 59%;
+    width: 100%;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s ease-in;
+    color: white;
+    opacity: 0;
+}
+.woocommerce ul.products li.product .woocommerce-LoopProduct-link:hover::after {
+opacity: 1 !important;
+}
+
 /*FIN DEL CARITOOOOOOOOOOOOOOOOOO--------------------------*/
 .post-template-default .containerposts{
     padding: 30px!important;
@@ -1302,7 +1321,6 @@ p.contenidodos.contenidotres::before {
 }
 .modal-card-title{
     text-align: center;
-
 }
 
 /*Fin de contactanos---------------------------------*/

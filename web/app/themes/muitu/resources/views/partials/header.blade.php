@@ -1552,12 +1552,14 @@
 </style>
 
 <header class="banner">
-   
+        <a href="#" class="botonmenu logomenuprimario">
+            <img src="/app/uploads/2018/06/hamburguesa.png" alt="" class="botoninterno">
+        </a>
     <div class="column is-2 is-paddingless  menuprimario">
        <div class="imagen"><a class="brand" href="{{ home_url('/') }}"><img src="{{ home_url('/app/uploads/2018/06/Logo-02.png') }}" style" height: auto; max-width: 100%; opacity: 0.7;" alt=""></a></div>
        <div class="icomenu columns">
          <div class="column is-5  is-paddingless"> <a href="{{ home_url('/') }}"><img src="{{ home_url('/app/uploads/2018/06/home.png') }}" class="logomenuprimario"></a></div>
-         <div class="column is-5  is-paddingless"><a href="/shop/"><img src="{{ home_url('/app/uploads/2018/06/tienda.png') }}" class="logomenuprimario"></a></div>
+         <div class="column is-5  is-paddingless"><a href="/shop/"><img src="{{ home_url('/app/uploads/2018/06/tienda1.png') }}" class="logomenuprimario"></a></div>
        </div>
       @if (has_nav_menu('primary_navigation'))
         {!! wp_nav_menu(['theme_location' => 'primary_navigation']) !!}
