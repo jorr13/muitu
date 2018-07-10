@@ -31,11 +31,11 @@
 		<ol class="pagination">
       	
 		</ol>
-		<div class="left">
+		<div class="right">
 			<span class="fa fa-chevron-left"><img src="/app/uploads/2018/06/rigth.png" alt=""></span>
     </div>
     
-		<div class="right">
+		<div class="left">
 			<span class="fa fa-chevron-right"><img src="/app/uploads/2018/06/left.png" alt=""></span>
 		</div>
 	</div>

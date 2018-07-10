@@ -46,6 +46,7 @@ logosheader{
     z-index:  999999;
     height:  100vh;
     text-align: justify;
+    transition: 0.5s;
 }
 .menuprimario .menu{
     text-align: center;
@@ -71,7 +72,8 @@ logosheader{
     padding: 20px 58px;
     background: #F1EFF0;
 }
-.menusecundario{
+.menusecundario{    
+    transition: 0.5s;
     background-color: #F1EFF0;
     padding-top: 40px;
     margin-top: -2px;
@@ -1314,29 +1316,39 @@ p.contenidodos.contenidotres::before {
 
 
 /*FIN DE CONDCIONES-----------------------------------*/
+/*MENU RESPONSIVE--------------------------------------*/
 .botonmenu{
-    top: initial !important;
-    bottom: 64px !important;
-    position: fixed !important;
-    right: 19px !important;
-    background: #B0834A !important;
-    border-radius: 50% !important;
-    width: 55px !important;
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
-    padding: 0 14px;
-    height: 55px;
-    z-index: 999999999999999999999999999999;
+    display: none;
 }
-.botoninterno{
-    font-size: 32px;
-    margin-top: 12px;
+
+.content-menu2{ 
+    transition: 0.5s;
+    margin-left: -100%;
 }
+/*FIN DEL MENU RESPONSIVE*/
 
 /*responsive*/
 
 @media only screen and (max-width:768px){
 
-
+    .botonmenu{
+        display: block;
+        top: initial !important;
+        bottom: 64px !important;
+        position: fixed !important;
+        right: 19px !important;
+        background: #B0834A !important;
+        border-radius: 50% !important;
+        width: 55px !important;
+        box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+        padding: 0 14px;
+        height: 55px;
+        z-index: 999999999999999999999999999999;
+    }
+    .botoninterno{
+        font-size: 32px;
+        margin-top: 12px;
+    }
 }
 
 

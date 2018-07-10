@@ -745,7 +745,7 @@
     }
     
     .menuprimario{
-    display: none;
+        width: 100%;
     }
 
 /*estilos home parte 1*/
