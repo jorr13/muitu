@@ -3,6 +3,10 @@
 @section('content')
   @include('partials.page-header')
 
+<a href="#" class="botonmenu logomenuprimario">
+  <img src="/app/uploads/2018/06/hamburguesa.png" alt="" class="botoninterno">
+</a>
+
   <!--slider-->
   <div class="slideshow">
 		<div class="tituloslider">
