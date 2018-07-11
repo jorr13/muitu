@@ -686,11 +686,12 @@ a.link.posts-link {
 .woocommerce ul.products li.product .woocommerce-LoopProduct-link::after{
     content: "Ver producto";
     position: absolute;
-    top: 85px;
+    top: 17%;
     height: 13%;
-    width: 100%;
+    width: 81%;
     z-index: 99;
     display: flex;
+    margin :10%;
     align-items: center;
     justify-content: center;
     transition: 0.5s ease-in;
