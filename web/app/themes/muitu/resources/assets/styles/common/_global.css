@@ -769,7 +769,7 @@ h2.woocommerce-loop-product__title {
     border: 3px solid #7E8E71 !important;
     font-size: 10px !important;
     text-transform: uppercase !important;
-    padding: 16px 13px !important;
+    padding: 16px 4px !important;
     line-height: 2px !important;
     border-radius: 0 !important;
     font-weight: 700;
@@ -2068,6 +2068,26 @@ p.contenidodos.contenidotres::before {
     .containercontactanos {
     padding: 2%;
     }
+/*estilos de shop*/
+    .verproductoshop {
+    height: 35px !important;
+    font-size: 10px !important;
+    letter-spacing: 1px !important;
+    }
+
+    .page-id-7 .add_to_cart_button {
+    width: 38px !important;
+    height: 38px !important;
+    padding: 0px !important;
+    background-size: 22px !important;
+    }
+
+    .page-id-7 .add_to_cart_button:hover {
+    width: 38px !important;
+    height: 38px !important;
+    padding: 0px !important;
+    background-size: 22px !important;
+    }
 }
 
 @media only screen and (max-width: 1100px) {
@@ -2220,8 +2240,10 @@ p.contenidodos.contenidotres::before {
     font-size: 10px;
     }
     
-/*estilos home parte footer*/
-
+/*estilos shop*/
+    .verproductoshop {
+    font-size: 8px !important;
+    }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -2251,17 +2273,8 @@ p.contenidodos.contenidotres::before {
     margin-top: 20%;
     }
     
-    .woocommerce-loop-product__title {
-    font-size: 12px !important;
-    }
-    
-    .woocommerce-Price-amount {
-    font-size: 10px !important;
-    }
-    
     .woocommerce ul.products li.product .button {
     font-size: 10px !important;
-    padding: 10% !important;
     padding-left: 5% !important;
     padding-right: 5% !important;
     }
@@ -2422,6 +2435,11 @@ p.contenidodos.contenidotres::before {
     .footeruno ul li {
     font-size: 10px;
     margin-bottom: 12px;
+    }
+
+    /*estilos shop */
+    .woocommerce ul.products li.product, .woocommerce-page ul.products li.product {
+    width: 30.05% !important;
     }
 
 }
@@ -2674,14 +2692,6 @@ p.contenidodos.contenidotres::before {
         margin-top: 35px !important;
         }
         
-        .woocommerce-loop-product__title {
-        font-size: 14px !important;
-        }
-        
-        .woocommerce-Price-amount {
-        font-size: 16px !important;
-        }
-        
         .woocommerce ul.products li.product .button {
         font-size: 10px !important;
         padding: 5% !important;
@@ -2819,12 +2829,43 @@ p.contenidodos.contenidotres::before {
     }
     
     .productitem {
-    width: 25%;
+    width: 50%;
     float: left;
+    padding-top: 20px;
     }
     
     .botonproducto {
     padding: 14px 10px !important;
+    font-size: 10px;
+    }
+
+    .newproduct {
+    background: white;
+    height: 880px;
+    box-shadow: 0px 12px 28px rgba(0, 0, 0, 0.2);
+    }
+    
+    .containerselec {
+    height: 8%;
+    }
+    
+    .containerproduct {
+    height: 42%;
+    }
+
+    .contenidoproduct {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    }
+
+    .newproduct .containerproduct {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    }
+
+    .newproduct .containerposts {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
     }
     
 /*estilos home parte 3*/   
@@ -2865,8 +2906,55 @@ p.contenidodos.contenidotres::before {
     .footertres {
     float: left;
     }
-}
+ /*estilos shop */
 
+    .verproductoshop {
+    font-size: 12px !important;
+    }
+
+    .woocommerce ul.products[class*=columns-] li.product, .woocommerce-page ul.products[class*=columns-] li.product {
+    width: 45% !important;
+    float: left !important;
+    clear: none !important;
+    margin: 15px !important;
+    }
+}
+@media only screen and (max-width: 740px) {
+    .woocommerce ul.products[class*=columns-] li.product, .woocommerce-page ul.products[class*=columns-] li.product {
+        width: 42% !important;
+        float: left !important;
+        clear: none !important;
+        margin: 15px !important;
+    }
+}
+@media only screen and (max-width: 550px) {
+.verproductoshop{
+    font-size: 10px !important;
+    padding: 0 !important;
+}
+}
+@media only screen and (max-width: 465px) {
+    .woocommerce ul.products[class*=columns-] li.product, .woocommerce-page ul.products[class*=columns-] li.product {
+        width: 40% !important;
+        float: left !important;
+        clear: none !important;
+        margin: 15px !important;
+    }
+    .verproductoshop{
+        font-size: 8px !important;
+    }
+}
+@media only screen and (max-width: 435px) {
+.woocommerce ul.products[class*=columns-] li.product, .woocommerce-page ul.products[class*=columns-] li.product {
+    width: 90% !important;
+    float: left !important;
+    clear: none !important;
+    margin: 15px !important;
+}
+.woocommerce ul.products li.product .button{
+    padding: 0px !important;
+} 
+}
 @media only screen and (max-width: 700px) {
 
 /*estilos Page template*/
@@ -3896,6 +3984,7 @@ img.logo-menusecundario {
     .woocommerce ul.products li.product a {
     font-weight: 600;
     color: #7e8e71;
+    height: 45px;
     }
     .select2-container--default .select2-selection--single {
     border: 1px solid #7e8e71;
@@ -3967,7 +4056,7 @@ img.logo-menusecundario {
     }
     .woocommerce ul.products li.product .button {
     font-size: 10px !important;
-    padding: 10% !important;
+    padding: 10%;
     }
     .onsale:after {
     height: 35px!important;
@@ -4077,7 +4166,7 @@ img.logo-menusecundario {
     margin: 1.4%;
     padding: 0 !important ;
     position: relative!important ;
-    width: 22.05%!important ;
+    width: 22.05%;
     margin-left: none !important ;
 }
 
@@ -4117,4 +4206,5 @@ img.logo-menusecundario {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
 /*FIN DE LOS CAMBIOOS*/

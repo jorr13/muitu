@@ -3,7 +3,6 @@ export default {
     $(".contacto").click(function (e) { 
       e.preventDefault();
       var email = $(this).data('email');
-      console.log(email);
       $("#registrar-usuario").fadeIn();
       $("#registrar-usuario #email-receptor").val(email);
     });
