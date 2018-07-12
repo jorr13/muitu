@@ -2,6 +2,7 @@
 
 @section('content')
   @while(have_posts()) @php the_post() @endphp
+  @include('partials.page-header')
   
   <div class="posts columns">     
       <div class="containerposts columns is-multiline">

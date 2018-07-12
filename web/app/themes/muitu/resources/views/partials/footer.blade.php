@@ -8,10 +8,12 @@
 	    		<ul>
 	    			<li><a href="/quienes-somos">Quienes somos</a></li>
 	    			<li><a href="/comunidades">Comunidades</a></li>
-	    			<li><a href="/condiciones">Condiciones de venta</a></li>
-	    			<li><a href="/informacion">Informacion de privacidad</a></li>
-	    		</ul>
-	    	</div>
+	    			<li><a href="">Condiciones de venta</a></li>
+	    			<li><a href="">Informacion de privacidad</a></li>
+				</ul>
+				
+			</div>
+			
 	    	<div class="footerdos column is-4">
 	    		<h1 class="contactanos">Contactanos</h1>
 	    		<input type="text" class="cajatexto" placeholder="Nombre"><br>

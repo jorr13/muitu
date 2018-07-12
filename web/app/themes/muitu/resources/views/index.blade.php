@@ -1,9 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-  @include('partials.page-header')
-
-
 
   <!--slider-->
   <div class="slideshow">
@@ -29,12 +26,13 @@
 		<ol class="pagination">
       	
 		</ol>
+		
 		<div class="right">
-			<span class="fa fa-chevron-left"><img src="/app/uploads/2018/06/rigth.png" alt=""></span>
-    </div>
+			<span class="fa fa-chevron-right"><img src="/app/uploads/2018/06/rigth.png" alt=""></span>
+        </div>
     
 		<div class="left">
-			<span class="fa fa-chevron-right"><img src="/app/uploads/2018/06/left.png" alt=""></span>
+			<span class="fa fa-chevron-left"><img src="/app/uploads/2018/06/left.png" alt=""></span>
 		</div>
 	</div>
   <!--quienes somos-->
@@ -49,7 +47,7 @@
             <p class="contenidouno">{{ get_sub_field('descripcion') }}</p>
             @php ( $link = get_sub_field('boton'))
              @if($link) 
-             <a class="botonseccion2" href="{{$link['url']}}" target="{{$link['target']}}">{{$link['title']}}</a>
+             <a class="botonseccion2" href="/quienes-somos" target="{{$link['target']}}">{{$link['title']}}</a>
             @endif
 	    	  </div>	
       </div>
@@ -145,6 +143,11 @@
           </div>
         @endforeach
       </div>
+     <div class="containerposts column botoncontainer ir-a-tienda">
+      <a class="botonposts botonfooter" href="/shop">Ir a la tienda</a>
+     </div>
+     
+     
   </div>
   <!--FIN PULCERAS-->
   <!--piezas unicas-->

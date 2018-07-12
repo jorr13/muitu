@@ -21,6 +21,7 @@
     <p>{{ the_field('partedos', 44)}}</p>
 </div>
 
+
 @if(have_rows('partetres', 44))
 {{-- loop through the rows of data --}}
 @while (have_rows('partetres', 44))@php(the_row())
@@ -30,7 +31,7 @@
               <p class="contenidodos contenidotres">{{ get_sub_field('partetext') }}</p>
             </div>
             <div class="imgseccion column is-5" style="position: absolute;right: 0;
-            background-size: cover !important; background-size: cover !important; height: 100%; background:url('{{ get_sub_field('imgcontenedor') }}')"></div>
+            background-size: cover !important; height: 100%; background:url('{{ get_sub_field('imgcontenedor') }}')"></div>
         </div>
     </div>
 @endwhile
@@ -45,9 +46,8 @@
 @while (have_rows('partecuatro', 44))@php(the_row())
     <div class="parteuno partecuatro">
         <div class="contenedorseccionuno contenedorseccionuno is-marginless columns is-multiline">
-            <div class="imgseccion column is-5">
-                <img src="{{ get_sub_field('imgcontenedordos') }}" alt="">
-            </div>	
+            <div class="imgseccion column is-5" style="position: relative;left: 0;
+            background-size: cover !important; height: 100%; background:url('{{ get_sub_field('imgcontenedordos') }}')"></div>
                 <div class="conten column is-5">
               <p class="contenidocuatro">{{ get_sub_field('contenidocuatro') }}</p>
             </div>

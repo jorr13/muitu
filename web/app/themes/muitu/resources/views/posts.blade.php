@@ -5,12 +5,13 @@
 @extends('layouts.app')
 
 @section('content')
+
   @while(have_posts()) @php the_post() @endphp
     @include('partials.page-header')
     @include('partials.content-page')
 
 
-    <div class="posts columns">     
+    <div class="posts columns page-blog">     
     <div class="containerposts columns is-multiline">
         <h1 class="titlearriba">Articulos recientes</h1><br>
         <p class="conteposts">Conoce sobre las comunidades que le han dado vida a cada producto que distribuimos, su cultura, su lenguaje y su amor</p><br>

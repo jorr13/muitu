@@ -4,9 +4,9 @@
 
 @extends('layouts.app')
 
+
 @section('content')
   @while(have_posts()) @php the_post() @endphp
-    @include('partials.page-header')
     @include('partials.content-page')
     <div class="posts columns">     
       <div class="containerposts columns is-multiline">
@@ -17,6 +17,7 @@
             <!--Esto es el thumb-->
             {!! $comunidades['thumbnail'] !!}
             </div>
+            
             <a href=" {!! $comunidades['link'] !!}" class="link posts-link">
               <div class="contenido">
                 <h4 class="titleposts posts-title">
