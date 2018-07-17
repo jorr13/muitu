@@ -532,7 +532,7 @@ a.link.posts-link {
     color: #7E8E71 !important;
     border: 3px solid #7E8E71 !important;
     text-align: center !important;
-    font-size: 12px !important;
+    font-size: 10px !important;
     text-transform: uppercase !important;
     padding: 17px 13px !important;
     line-height: 4px !important;
@@ -749,6 +749,15 @@ h2.woocommerce-loop-product__title {
 }
 .page-template-default .woocommerce{
     width: 1000px !important;
+}
+.woocommerce-cart input[name=calc_shipping_state] {
+    width: 100% !important;
+}
+.woocommerce-cart input[name=calc_shipping_city] {
+    width: 100% !important;
+}
+.woocommerce-cart input[name=calc_shipping_postcode] {
+    width: 100% !important;
 }
 .page-template-default button[name=update_cart] {
     display: none;
@@ -2092,7 +2101,17 @@ p.contenidodos.contenidotres::before {
     background-size: 22px !important;
     }
 }
-
+@media only screen and (max-width: 1024px) {
+    .woocommerce-page .posts {
+        margin-top: 12% !important;
+    }
+    .product-template-default .posts .containerposts {
+        margin-top: 23% !important;
+    }
+    .page-template-default .cart_totals .wc-proceed-to-checkout {
+        width: 35% !important;
+    }
+}
 @media only screen and (max-width: 1100px) {
     .imgparteuno img {
         margin-top: 18%;
@@ -2128,7 +2147,7 @@ p.contenidodos.contenidotres::before {
 /*estilos home parte 1*/
     
     .slideshow {
-    padding-top: 100px;
+    padding-top: 165px;
     height: 550px;
     }
     
@@ -2150,7 +2169,7 @@ p.contenidodos.contenidotres::before {
     }
     
     .slider .caption {
-    padding-top: 10%;
+    padding-top: 24%;
     }
     
     .left, .right {
@@ -2250,6 +2269,9 @@ p.contenidodos.contenidotres::before {
 }
 
 @media only screen and (max-width: 1000px) {
+    .page-template-default .cart_totals .wc-proceed-to-checkout {
+        width: 45% !important;
+    }
 
 /*cambios de luz*/
 .page-header {
@@ -2272,9 +2294,7 @@ p.contenidodos.contenidotres::before {
     margin-top: 40px!important;
     }
     
-    .woocommerce-page .posts .containerposts {
-    margin-top: 20%;
-    }
+
     
     .woocommerce ul.products li.product .button {
     font-size: 10px !important;
@@ -2450,6 +2470,9 @@ p.contenidodos.contenidotres::before {
 @media only screen and (max-width: 850px) {
 
 /*estilos pagina quienes somos*/
+.contenidodos {
+    margin-top: -30%;
+}
     .page-header {
         height: 400px;
     }
@@ -2669,7 +2692,9 @@ p.contenidodos.contenidotres::before {
 }
 
 @media only screen and (max-width: 768px) {
-  
+    .page-template-default .cart_totals .wc-proceed-to-checkout {
+        width: 45% !important;
+    }
 /*estilos pagina quienes somos*/
 .product-template-default .related{
     margin-top: 12% !important;
@@ -2978,6 +3003,9 @@ p.contenidodos.contenidotres::before {
 }
 }
 @media only screen and (max-width: 465px) {
+    .page-template-default .cart_totals .wc-proceed-to-checkout {
+        width: 100% !important;
+    }
     .woocommerce ul.products[class*=columns-] li.product, .woocommerce-page ul.products[class*=columns-] li.product {
         width: 40% !important;
         float: left !important;
@@ -2988,7 +3016,22 @@ p.contenidodos.contenidotres::before {
         font-size: 8px !important;
     }
 }
+@media only screen and (max-width: 420px) {
+    .woocommerce table.shop_table tr td::before, .woocommerce-page table.shop_table tr td::before{
+        float: none !important;
+    }
+    .shop_table{
+        margin: 0 auto;
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 412px){
+.slideshow {
+    padding-top: 100px;
+}
+}
 @media only screen and (max-width: 435px) {
+
 .woocommerce ul.products[class*=columns-] li.product, .woocommerce-page ul.products[class*=columns-] li.product {
     width: 90% !important;
     float: left !important;
@@ -3129,7 +3172,6 @@ p.contenidodos.contenidotres::before {
         box-shadow: 0px 0px 0px 0px !important;
     }
     .contenidodos {
-    margin-top: -48%;
     font-size: 10px;
     }
     
@@ -3176,6 +3218,9 @@ p.contenidodos.contenidotres::before {
 }
 
 @media only screen and (max-width: 620px) {
+    .page-template-default .cart_totals .wc-proceed-to-checkout {
+        width: 100% !important;
+    }
 
 /*estilos home parte 1*/
 
@@ -3926,9 +3971,6 @@ img.logo-menusecundario {
 .woocommerce-page .posts{
     margin-top: 0;
 }
-.woocommerce-page .posts .containerposts {
-    margin-top: 15%;
-}
 .prdctfltr_showing::before{
     display: none;
 }
@@ -3999,7 +4041,7 @@ img.logo-menusecundario {
     margin-top: 5% !important;
     }
     .page-template-comunidades .posts .containerposts {
-    margin-top: 15% !important;
+    margin-top: 15%;
     }
     .page-template-comunidades .posts {
     margin-top: 0 !important;
@@ -4084,6 +4126,20 @@ img.logo-menusecundario {
     }
 
 }
+@media only screen and (max-width: 510px) {
+    .page-template-default .cart_totals .wc-proceed-to-checkout {
+        width: 100% !important;
+    }
+    button[name="apply_coupon"]{
+        width: 100% !important;
+        height: 40px !important;
+        margin-top: 11px !important;
+    }
+    .page-template-default #coupon_code {
+        width: 100% !important;
+    }
+
+}
 @media only screen and (max-width: 500px) {
     img.logo-menusecundario {
     width: 17% !important;
@@ -4138,6 +4194,8 @@ img.logo-menusecundario {
         display: none !important;
     } 
 }
+
+
 @media only screen and (max-width: 350px) {
     
     .page-header {
@@ -4188,9 +4246,7 @@ img.logo-menusecundario {
 .irtienda{
     margin-left: 40px;
 }
-.woocommerce .input-text {
-    width: 100% !important;
-}
+
 .col-1{
     float: none !important;
     width: 100% !important;
@@ -4201,7 +4257,7 @@ img.logo-menusecundario {
 }
 
 .page-template-default #coupon_code {
-    width: 162px !important;
+    width: 162px ;
 }
 
 .contenedorbotones{
@@ -4257,6 +4313,9 @@ img.logo-menusecundario {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+.woocommerce-checkout .input-text {
+    width: 100% !important;
 }
 
 /*FIN DE LOS CAMBIOOS*/
