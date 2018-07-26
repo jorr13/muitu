@@ -160,7 +160,7 @@ export default {
           
           var imagen  = document.querySelector(".active img");
           var rgb_promedio = getAverageRGB(imagen);
-          $('body, html').css({'background-color': 'rgba('+ rgb_promedio.r + ',' + rgb_promedio.g + ',' + rgb_promedio.b +', 0.5)' });
+          $('body, html').css({'background-color': 'rgba('+ rgb_promedio.r + ',' + rgb_promedio.g + ',' + rgb_promedio.b +', 0.6)' });
 
 
           

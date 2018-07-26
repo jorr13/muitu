@@ -26,8 +26,6 @@ export default {
       });
     });
 
-
-
     if ($('.woocommerce-info').length == 0)
       $(".checkout-button").removeClass("button "),
       $(".checkout-button").addClass("botonbloquiado");
@@ -35,6 +33,13 @@ export default {
     else 
     if ($('.woocommerce-info').length > 0)     
     $(".checkout-button").removeClass("botonbloquiado");
+
+    if ($('.woocommerce-info').length == 0)
+    $('.order-total').addClass("disabled");
+
+    else 
+    if ($('.woocommerce-info').length > 0)     
+    $('.order-total').removeClass("disabled");
 //para enviar correo
 // Aqui va el script para el form del footer
 $("#submitemail").click(function (e) {
@@ -43,6 +48,7 @@ $("#submitemail").click(function (e) {
   var email = $("#emailcliente").val();
   var telefono = $("#telefono").val();
   var mensaje = $("#mensaje").val();
+  var correo_enviar =$("#email-receptor").val();
   $("#returnmessage").empty(); // To empty previous error/success message.
   // Checking for blank fields.
   if (name == '' || email == '' || telefono == ''|| mensaje == '') {
@@ -54,6 +60,7 @@ $("#submitemail").click(function (e) {
       email1: email,
       telefono1: telefono,
       mensaje1: mensaje,
+      correo_enviar1: correo_enviar,
     }, function (data) {
       $("#returnmessage").append(data); // Append returned message to message paragraph.
       if (data == "Thank you. We'll be in contact very soon.") {

@@ -39,16 +39,19 @@
                     <p class="modal-card-title">Escribe tu mensaje</p>
                     <button id="cerrar" class="delete" aria-label="close"></button>
                 </header>
-                <section class="modal-card-body">
-                    <input class="nombremodal"  placeholder="Su nombre" id="nombre" type="text">
-                    <input class="emailmodal"  placeholder="Su email" id="emailcliente" type="text">
-                    <input id="email-receptor" type="hidden" name="" id="" value="email">
-                    <input class="tlfmodal" placeholder="Numero de telefono" id="telefono" type="text" >
-                    <textarea class="containermensaje" id="mensaje" placeholder="Su mensaje"></textarea>
-                </section>
-                <footer class="modal-card-foot">
-                <a href="#" id="submitemail" class="botonproducto botonmodal">Enviar</a>   
-                </footer>
+                <form action="post" id="subscription-form">
+                    <section class="modal-card-body">
+                        <input class="nombremodal"  placeholder="Su nombre" id="nombre" type="text">
+                        <input class="emailmodal"  placeholder="Su email" id="emailcliente" type="text">
+                        <input id="email-receptor" type="hidden" name="" value="email">
+                        <input class="tlfmodal" placeholder="Numero de telefono" id="telefono" type="text" >
+                        <textarea class="containermensaje" id="mensaje" placeholder="Su mensaje"></textarea>
+                    </section>
+                    <footer class="modal-card-foot">
+                        <button id="submitemail" class="botonproducto botonmodal">Enviar</button> 
+                        <span id="returnmessage"></span>
+                    </footer>
+                </form>
             </div>
         </div>
     </div>

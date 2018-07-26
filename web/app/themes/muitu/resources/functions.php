@@ -96,3 +96,132 @@ Container::getInstance()
         acf_add_options_page();
         
     }
+    /////Esto traduce el view cart
+
+    /**
+ * Change text strings
+ *
+ * @link http://codex.wordpress.org/Plugin_API/Filter_Reference/gettext
+ */
+function my_text_strings( $translated_text, $text, $domain ) {
+    switch ( $translated_text ) {
+        case 'View cart' :
+            $translated_text = __( 'Agregaste este producto ¿Quieres ver el Carrito?', 'woocommerce' );
+            break;
+        case 'Apply coupon' :
+            $translated_text = __( 'Aplicar Descuento', 'woocommerce' );
+            break;
+        case 'Cart totals' :
+        $translated_text = __( 'Total del carrito', 'woocommerce' );
+            break;
+        case 'Proceed to checkout' :
+        $translated_text = __( 'Proceder a revision', 'woocommerce' );
+            break;
+        case 'Shipping' :
+        $translated_text = __( 'Envio', 'woocommerce' );
+            break;
+        case 'Sort By' :
+        $translated_text = __( 'Ordenar por', 'woocommerce' );
+            break;
+        case 'Price Range' :
+        $translated_text = __( 'Rango de precio', 'woocommerce' );
+            break;
+        case 'Categories' :
+        $translated_text = __( 'Categorias', 'woocommerce' );
+            break;
+        case 'None' :
+        $translated_text = __( 'Ninguna', 'woocommerce' );
+            break;
+        case 'Review Count' :
+        $translated_text = __( 'Recuento de revisión', 'woocommerce' );
+            break;
+        case 'Popularity' :
+        $translated_text = __( 'Popularidad', 'woocommerce' );
+            break;
+        case 'Average rating' :
+        $translated_text = __( 'Puntuación media', 'woocommerce' );
+            break;
+        case 'Newness' :
+        $translated_text = __( 'Novedad', 'woocommerce' );
+            break;
+        case 'Price: low to high' :
+        $translated_text = __( 'Precios de Menor a Mayor', 'woocommerce' );
+            break;
+        case 'Price: high to low' :
+        $translated_text = __( 'Precio: de Mayor a Menor', 'woocommerce' );
+            break;
+        case 'Random Products' :
+        $translated_text = __( 'Productos Aleatorios', 'woocommerce' );
+            break;
+        case 'Product Name' :
+        $translated_text = __( 'Alfabeticamente', 'woocommerce' );
+            break;
+        case 'Related products' :
+        $translated_text = __( 'Productos relacionados', 'woocommerce' );
+            break;
+        case 'has been added to your cart.' :
+        $translated_text = __( 'Ha sido agregado a tu carro', 'woocommerce' );
+            break;
+        case 'Company name' :
+        $translated_text = __( 'Nombre de empresa', 'woocommerce' );
+            break;
+        case '(optional)' :
+        $translated_text = __( '(Opcional)', 'woocommerce' );
+            break;
+        case 'Street address' :
+        $translated_text = __( 'Dirección', 'woocommerce' );
+            break;
+        case 'Apartment, suite, unit etc. (optional)' :
+        $translated_text = __( 'Apartamento, suite, unidad, etc. (opcional)', 'woocommerce' );
+            break;
+        case 'Email address' :
+        $translated_text = __( 'Dirección de correo electrónico', 'woocommerce' );
+            break;
+        case 'Ship to a different address?' :
+        $translated_text = __( '¿Envia a una direccion diferente?', 'woocommerce' );
+            break;
+        case 'Notes about your order, e.g. special notes for delivery.' :
+        $translated_text = __( 'Notas especiales para la entrega.', 'woocommerce' );
+            break;
+        case 'Shipping' :
+        $translated_text = __( 'Envio', 'woocommerce' );
+            break;
+
+        case 'Billing details' :
+        $translated_text = __( 'Detalles de facturación', 'woocommerce' );
+            break;
+        case 'Direct bank transfer' :
+        $translated_text = __( 'Transferencia bancaria directa', 'woocommerce' );
+            break;
+        case 'Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order will not be shipped until the funds have cleared in our account.' :
+        $translated_text = __( 'Haga su pago directamente en nuestra cuenta bancaria. Utilice su ID de pedido como referencia de pago. Su pedido no será enviado hasta que los fondos se hayan liquidado en nuestra cuenta.', 'woocommerce' );
+            break;
+        case 'PayPal Express Checkout' :
+        $translated_text = __( 'PayPal Pago exprés', 'woocommerce' );
+            break;
+ 
+        case 'privacy policy' :
+        $translated_text = __( 'Politicas de Privacidad', 'woocommerce' );
+            break;
+
+        case 'Continue to payment' :
+        $translated_text = __( 'Continuar con el pago', 'woocommerce' );
+            break;
+    }
+    return $translated_text;
+}
+
+add_filter( 'gettext', 'my_text_strings', 20, 3 );
+
+////
+add_filter( 'wc_add_to_cart_message', 'wdo_custom_wc_add_to_cart_message', 10, 2 ); 
+ 
+function wdo_custom_wc_add_to_cart_message( $message, $product_id ) { 
+    $message = sprintf(esc_html__('« %s » ha sido agregado al carrito','tm-organik'), get_the_title( $product_id ) ); 
+    return $message; 
+}
+
+add_filter( 'woocommerce_shipping_package_name', 'custom_shipping_package_name' );
+function custom_shipping_package_name( $name ) {
+  return 'Envio';
+}

@@ -1,5 +1,5 @@
 <header class="banner">
-    <a href="#" class="botonmenu logomenuprimario otraclase" style="z-index: 999999999 !important;"><img src="/app/uploads/2018/06/hamburguesa.png" alt="" class="botoninterno"></a>   
+    <a href="#" class="botonmenu logomenuprimario otraclase" style="z-index: 999999999 !important;"><img src="/app/uploads/2018/06/hamburguesa1.png" alt="" class="botoninterno"></a>   
     <div class="column is-2 is-paddingless  menuprimario">
        <div class="imagen"><a class="brand" href="{{ home_url('/') }}"><img src="{{ home_url('/app/uploads/2018/06/Logo-02.png') }}" style" height: auto; max-width: 100%; opacity: 0.7;" alt=""></a></div>
        <div class="icomenu columns">
@@ -18,7 +18,7 @@
     <div class="column is-10 is-pulled-right menusecundario has-text-right">
     <a href="http://www.muituhandmade.com/"><img class="logo-menusecundario" src="{{ home_url('/app/uploads/2018/06/Logo-02.png') }}" alt=""></a>
       <a href="/cart/" class="link">Carrito</a>
-      <a href="#" class="link">Iniciar Sesion</a>
+      <a href="/my-account/" class="link">Iniciar Sesion</a>
 
     </div>
 </header>
