@@ -55,12 +55,13 @@
 
   <div class="posts newproduct"> 
       <div class="containerposts containerselec columns is-multiline">
-          <a href="#" id="clickhamacas" class="column is-3">HAMACAS</a>
           <a href="#" id="clickbolsos" class="column is-3">BOLSOS</a>
-          <a href="#" id="clickcinturnes" class="column is-3">CINTURONES</a>
           <a href="#" id="clickpulceras" class="column is-3">PULCERAS</a>
+          <a href="#" id="clickhamacas" class="column is-3">HAMACAS</a>
+          <a href="#" id="clickcinturnes" class="column is-3">CINTURONES</a>
+
         </div> 
-    <div class="containerposts containerproduct hamacas columns is-multiline" id="hamacas">
+    <div class="containerposts containerproduct hamacas columns is-multiline" id="hamacas" style="display:none">
       @foreach(array_slice($category_loop,0,4) as $category)
 
       <div class="column productitem is-3">
@@ -81,7 +82,7 @@
   <!--FIN HAMACAS-->
    <!--BOLSOS-->
    
-      <div class="containerposts containerproduct bolsos columns is-multiline" id="bolsos" style="display:none">
+      <div class="containerposts containerproduct bolsos columns is-multiline" id="bolsos">
         @foreach(array_slice($bolsos_loop,0,4) as $bolsos)
         <div class="column productitem is-3">
           <a href=" {!! $bolsos['link'] !!}">
@@ -192,7 +193,7 @@
       </div>   
       @endforeach
       <div class="column is-12 botoncontainer">
-        <a class="botonposts botonfooter" href="/blog/">Ver Posts</a>
+        <a class="botonposts botonfooter" href="/blog/">Ir a Blog</a>
       </div>
     </div>
     </div>

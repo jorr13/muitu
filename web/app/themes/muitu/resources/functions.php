@@ -105,11 +105,11 @@ Container::getInstance()
  */
 function my_text_strings( $translated_text, $text, $domain ) {
     switch ( $translated_text ) {
-        case 'View cart' :
+        case 'Ver carrito' :
             $translated_text = __( 'Agregaste este producto ¿Quieres ver el Carrito?', 'woocommerce' );
             break;
-        case 'Apply coupon' :
-            $translated_text = __( 'Aplicar Descuento', 'woocommerce' );
+        case 'Log in' :
+            $translated_text = __( 'Entrar', 'woocommerce' );
             break;
         case 'Cart totals' :
         $translated_text = __( 'Total del carrito', 'woocommerce' );
@@ -193,8 +193,8 @@ function my_text_strings( $translated_text, $text, $domain ) {
         case 'Direct bank transfer' :
         $translated_text = __( 'Transferencia bancaria directa', 'woocommerce' );
             break;
-        case 'Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order will not be shipped until the funds have cleared in our account.' :
-        $translated_text = __( 'Haga su pago directamente en nuestra cuenta bancaria. Utilice su ID de pedido como referencia de pago. Su pedido no será enviado hasta que los fondos se hayan liquidado en nuestra cuenta.', 'woocommerce' );
+        case 'Gracias. Tu pedido ha sido recibido.' :
+        $translated_text = __( '¡Gracias por su compra!. Su pedido ha sido recibido con exito. Si precisa cualquier aclaracion o tiene alguna duda, use el formulario de CONTACTANOS para hacernos llegar su consulta. En breve nos pondremos en contacto con usted para confirmar su pedido y cuando le sera enviado. ', 'woocommerce' );
             break;
         case 'PayPal Express Checkout' :
         $translated_text = __( 'PayPal Pago exprés', 'woocommerce' );
@@ -207,6 +207,13 @@ function my_text_strings( $translated_text, $text, $domain ) {
         case 'Continue to payment' :
         $translated_text = __( 'Continuar con el pago', 'woocommerce' );
             break;
+        case 'Undo?' :
+        $translated_text = __( '¿Deshacer?', 'woocommerce' );
+        break;
+        case 'Return to shop' :
+        $translated_text = __( 'Tienda', 'woocommerce' );
+            break;
+
     }
     return $translated_text;
 }
@@ -225,3 +232,4 @@ add_filter( 'woocommerce_shipping_package_name', 'custom_shipping_package_name' 
 function custom_shipping_package_name( $name ) {
   return 'Envio';
 }
+

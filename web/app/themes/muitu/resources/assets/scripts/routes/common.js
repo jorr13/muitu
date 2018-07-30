@@ -63,13 +63,16 @@ $("#submitemail").click(function (e) {
       correo_enviar1: correo_enviar,
     }, function (data) {
       $("#returnmessage").append(data); // Append returned message to message paragraph.
-      if (data == "Thank you. We'll be in contact very soon.") {
+      if (data == "Gracias. Estaremos en contacto muy pronto.") {
         $("#subscription-form")[0].reset(); // To reset form fields on success.
       }
     });
   }
 });
-  },
+$(document).ready(function(){
+  $(".woocommerce-order-details__title").append("<a href='https://muituhandmade.com' class='verproductoshop factura'>Inicio</a>");
+});
+},
   finalize() {
     // JavaScript to be fired on all pages, after page specific JS is fired
   },

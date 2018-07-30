@@ -4165,7 +4165,8 @@ img.logo-menusecundario {
     display: none;
     }
     .page-id-10 .woocommerce-Button{
-        width: 35% !important;
+        margin-bottom: 13px !important;
+        width: 100% !important;
     }
     .page-template-blog .containerposts{
         margin-top: 32% !important;
@@ -4479,7 +4480,7 @@ img.logo-menusecundario {
     width: 105px !important;
     height: 72px !important;
     margin-top: -1% !important;
-    left: 6% !important;
+    left: 45% !important;
     position: absolute !important;
     z-index: 999999999 !important;
     visibility: visible !important;
@@ -4498,5 +4499,91 @@ img.logo-menusecundario {
 }
 .wc-forward{
     color: #7e8e71 !important;
+}
+span.prdctfltr_showing {
+    border-color: #7e8e71;
+    border-left: solid;
+    padding-left: 14px;
+ }
+ 
+ span.prdctfltr_woocommerce_filter_title {
+    padding-right: 14px;
+ }
+
+.woocommerce-cart  .woocommerce-error{
+    margin-left: 0 !important;
+    margin-bottom: 28px !important;
+}
+.woocommerce-remove-coupon{
+    color:black !important
+}
+.woocommerce form .form-row.woocommerce-validated .select2-container, .woocommerce form .form-row.woocommerce-validated input.input-text, .woocommerce form .form-row.woocommerce-validated select{
+    border-color: #7E8E71 !important;
+}
+.woocommerce form .form-row.woocommerce-invalid .select2-container, .woocommerce form .form-row.woocommerce-invalid input.input-text, .woocommerce form .form-row.woocommerce-invalid select{
+    border-color: #CC5E5D !important;
+}
+.woocommerce-account .posts{
+width: 70%;
+} 
+.woocommerce-account .posts .containerposts{
+    margin-top: 20%;
+}
+.page-checkout-data label{
+    margin-left: 10px !important;
+}
+.select2-selection--single{
+    margin-left: 10px !important;
+}
+.page-checkout-data .woocommerce-thankyou-order-received{
+    margin-bottom: 25px !important;
+}
+.page-checkout-data .woocommerce-order-overview{
+    margin-bottom: 25px !important;
+}
+.page-checkout-data .woocommerce-order-overview__payment-method {
+    margin-top: 5px !important;
+}
+.page-checkout-data .woocommerce-order-details{
+    margin-bottom: 25px !important;
+}
+.factura{
+    width:25% !important;
+}
+.woocommerce ul.products li.product, .woocommerce-page ul.products li.product{
+    display: block !important;
+}
+.woocommerce-form-login{
+    margin-top: 45px !important;
+}
+.woocommerce-account .posts .containerposts{
+    margin-top: 20%;
+}
+@media only screen and (max-width: 1024px) {
+    .woocommerce-account .posts .containerposts{
+        margin-top: 25% !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .form-row {
+        margin-top: 35px !important;
+    }
+}
+@media only screen and (max-width: 650px) {
+    .page-id-10 .woocommerce-Button {
+        width: 30%;
+    }
+    .woocommerce-account .posts .containerposts{
+        margin-top: 30% !important;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .woocommerce-account .posts .containerposts{
+        margin-top: 45% !important;
+    }
+}
+.product-category{
+    display: none !important;
 }
 /*FIN DE LOS CAMBIOOS*/

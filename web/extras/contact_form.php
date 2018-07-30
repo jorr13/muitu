@@ -44,22 +44,18 @@ try {
     $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
     $headers .= 'From:' . $email. "\r\n"; // Sender's Email
     $headers .= 'Cc:' . 'adriansalvatori@gmail.com'. "\r\n"; // Carbon copy to Sender
-    $template = '<div style="padding:50px; color:white; font-size: 15px"><h1>Hello ' . $name . ',</h1>'
-    . '<br/>Thank you for Contacting Us.<br/><br/>'
-    . 'Name: ' . $name . '<br/>'
-    . 'Email: ' . $email . '<br/>'
-    . 'Telefono: ' . $telefono . '<br/>'
-    . '<strong>' . $mailbody . '</strong><br/><br/>'
-    . 'This is a confirmation mail.'
-    . '<br/>'
-    . 'We Will contact You as soon as possible .</div>';
-    $sendmessage = "<div style=\"background-color: #f3f3f3;color:white;min-height:  500px;padding: 15%;box-sizing:  border-box;text-align:  center;\"> <a href=\"https://lobsterblum.io\"><img style=\"margin: 20px auto; height:50px; width: 50px;\" src=\"https://lobsterblum.io/app/uploads/2018/05/cropped-Lobsterblum-iso-03-150x150.png\"></a> <div style=\"height:  90%;width:  90%;max-width:  350px;margin: 0 auto;text-align:  left;padding: 25px;border-radius: 10px;background: linear-gradient(135deg,#571845,#900c3d 26%,#c70038 51%,#ff5733 76%,#ffc300);box-shadow: 0 0 30px rgba(0,0,0,0.2);\">" . $template . "</div></div>";
+    $template = ''
+    . 'Nombre: ' . $name . '<br/><br/>'
+    . 'Email: ' . $email . '<br/><br/>'
+    . 'Telefono: ' . $telefono . '<br/><br/>'
+    . '<strong>' . $mailbody . '</strong><br/><br/>';
+    $sendmessage = "<div style=\"background-color: #f3f3f3;color:white;min-height:  500px;padding: 15%;box-sizing:  border-box;text-align:  center;font-size:15px;\"> <a href=\"http://www.muituhandmade.com\"><img style=\"margin: 20px auto; height:100px; width: 200px;\" src=\"http://www.muituhandmade.com/app/uploads/2018/06/Logo-02.png\"></a> <div style=\"background-image: url(http://www.muituhandmade.com/app/uploads/2018/06/contact-bg-3.jpg);color:white;min-height:  500px;padding: 15%;box-sizing:  border-box;text-align:center;width: 70%; margin: 0 auto;height: 120%;background-repeat: no-repeat;background-size: cover;box-shadow: 0 0 30px rgba(0,0,0,0.2);\"> <div style=\"margin-top: 10%!;padding: 10%;width: 110%; position: relative;background-color: #fff;box-shadow: 0 0 50px rgba(0,0,0,.2)z-index: 8;\">". $template . "</div></div></div>";
     //Message lines should not exceed 70 characters (PHP rule), so wrap it.
    
     $mail->MsgHTML("".$sendmessage.""); 
 
     $mail->send();
-    echo "Thank you. We'll be in contact very soon.";
+    echo "Gracias. Estaremos en contacto muy pronto.";
 } catch (Exception $e) {
     echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
 }
