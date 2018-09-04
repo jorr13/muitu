@@ -1,18 +1,18 @@
 @extends('layouts.app')
 @section('content')
   <!--slider-->
-  <div class="slideshow">
+  <div class="slideshow ">
 		<div class="tituloslider">
 			<h1> Productos recientes</h1>
     </div>
 		<ul class="slider">
          @foreach($products_loop as $products)
             <li>
-                <div class="sliderimagen">
+                <div class="sliderimagen ">
                     <!--Esto es el thumb-->
                     {!! $products['thumbnail'] !!}
                 </div>
-                <section class="caption">
+                <section class="caption ">
                     <h1>{!! $products['title'] !!}</h1>
                     <p>{!! $products['excerpt'] !!}</p>
                     <a href=" {!! $products['link'] !!}" class="botonfooter">Ver Producto</a>
@@ -32,10 +32,10 @@
   @if(have_rows('seccionuno', 2))
     {{-- loop through the rows of data --}}
     @while (have_rows('seccionuno', 2))@php(the_row())
-    <div class="seccionuno">
+    <div class="seccionuno an">
       <div class="contenedorseccionuno contenedorseccionuno is-marginless columns is-multiline">
-      	<div class="imgseccion column is-5" style="background:url('{{ get_sub_field('img') }}'); background-size: cover; height: 100%; "></div>	
-	      	<div class="conten column is-5">
+      	<div class="imgseccion column is-5 " style="background:url('{{ get_sub_field('img') }}'); background-size: cover; height: 100%; "></div>	
+	      	<div class="conten column is-5 an">
 	      	  <h1 class="titleseccionuno">{{ get_sub_field('titulo') }}</h1>
             <p class="contenidouno">{{ get_sub_field('descripcion') }}</p>
             @php ( $link = get_sub_field('boton'))
@@ -53,7 +53,7 @@
   
       <h1 class="titlenuevo">Lo nuevo de la tienda</h1>
 
-  <div class="posts newproduct"> 
+  <div class="posts newproduct an"> 
       <div class="containerposts containerselec columns is-multiline">
           <a href="#" id="clickbolsos" class="column is-3">BOLSOS</a>
           <a href="#" id="clickpulceras" class="column is-3">PULCERAS</a>
@@ -148,13 +148,13 @@
   @if(have_rows('secciondos', 2))
     {{-- loop through the rows of data --}}
     @while (have_rows('secciondos', 2))@php(the_row())
-      <div class="secciondos">
+      <div class="secciondos ">
         <div class="contenedorsecciondos is-marginless columns is-multiline">
             <div class="column is-1" style="
             height: 100%;"></div>
             <div class="contendos column is-5">
-                <h1 class="titlesecciondos">{{ get_sub_field('titulo') }}</h1>
-              <p class="contenidodos">{{ get_sub_field('descripcion') }}</p>
+                <h1 class="titlesecciondos an">{{ get_sub_field('titulo') }}</h1>
+              <p class="contenidodos an">{{ get_sub_field('descripcion') }}</p>
               @php ( $link = get_sub_field('boton'))
               @if($link)
               <a class="botonseccion" href="{{$link['url']}}" target="{{$link['target']}}">{{$link['title']}}</a>
@@ -172,10 +172,10 @@
 
   <div class="posts columns">     
     <div class="containerposts columns is-multiline">
-        <h1 class="titlearriba">Articulos recientes</h1><br>
-        <p class="conteposts">Conoce sobre las comunidades que le han dado vida a cada producto que distribuimos, su cultura, su lenguaje y su amor</p><br>
+        <h1 class="titlearriba an">Articulos recientes</h1><br>
+        <p class="conteposts an">Conoce sobre las comunidades que le han dado vida a cada producto que distribuimos, su cultura, su lenguaje y su amor</p><br>
       @foreach(array_slice($posts_loop,0,4) as $posts)
-      <div class="containerpost column is-9">
+      <div class="containerpost column is-9 an">
         <div class="img-container">
         <!--Esto es el thumb-->
         {!! $posts['thumbnail'] !!}

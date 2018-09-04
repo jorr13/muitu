@@ -38,6 +38,7 @@
       @else 
     <a href="{{ home_url('/') }}my-account/" class="link">{{ $current_user->display_name }}</a> <a href="{{ home_url('/') }}my-account/customer-logout" class="link-cerrar">Cerrar Sesion</a>
       @endif
+      <div class="line"></div>
     </div>
 
 

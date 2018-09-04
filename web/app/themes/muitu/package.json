@@ -103,6 +103,7 @@
     "yargs": "~11.0.0"
   },
   "dependencies": {
+    "animate.css": "^3.7.0",
     "bulma": "^0.5.0",
     "jquery": "^3.3.1",
     "slider-pro": "^1.4.0"

@@ -54,11 +54,14 @@ display: none;
     color:black;
 }
 .menu-item{
+    position: relative;
     padding: 16px;
 }
 .menu-item a{
+    position: relative;
     font-size: 9px;
     color: black;
+    padding-bottom: 5px;
     text-decoration: none;
 }
 .sub-menu{
@@ -91,7 +94,8 @@ display: none;
 }
 .link{
     color: black;
-    padding: 30px;
+    padding: 15px;
+    position: relative;
 }
 link a{
     float: right;
@@ -2720,18 +2724,21 @@ p.contenidodos.contenidotres::before {
 }
 
 @media only screen and (max-width: 768px) {
+    .page-my-account-data .woocommerce-Button {
+        width: 100% !important;
+    }
 
     .page-template-default .cart_totals .wc-proceed-to-checkout {
         width: 45% !important;
     }
-/*estilos pagina quienes somos*/
-.product-template-default .related{
-    margin-top: 12% !important;
-}
+    /*estilos pagina quienes somos*/
+    .product-template-default .related{
+        margin-top: 12% !important;
+    }
 
-.woocommerce-tabs{
-    margin-top: -60px !important;
-}
+    .woocommerce-tabs{
+        margin-top: -60px !important;
+    }
     .flex-viewport{
         width: 100% !important;
         height: 100% !important;
@@ -2770,33 +2777,33 @@ p.contenidodos.contenidotres::before {
         width: 15%!important;
         display: block;
         height: auto;
-        }
-        
-        .menusecundario .link {
+    }
+    
+    .menusecundario .link {
         color: #000;
         padding: 15px;
-        }
-        
-        .woocommerce ul.products li.product .woocommerce-LoopProduct-link:after {
+    }
+    
+    .woocommerce ul.products li.product .woocommerce-LoopProduct-link:after {
         font-size: 12px !important;
         margin-top: 35px !important;
-        }
-        
-        .woocommerce ul.products li.product .button {
+    }
+    
+    .woocommerce ul.products li.product .button {
         font-size: 10px !important;
         padding: 5% !important;
-        }
+    }
     .menu-menu-lateral-container {
         margin-bottom: 10px;
         margin-top: 50px;
     }
- .menu-item a {
-    font-size: 10px;
-  }
+    .menu-item a {
+        font-size: 10px;
+    }
 
-  .menu-item a {
-    padding: 14px;
-  }
+    .menu-item a {
+        padding: 14px;
+    }
     .icomenu {
         padding-top: 20px;
         width: 160px;
@@ -2826,60 +2833,60 @@ p.contenidodos.contenidotres::before {
         margin-top: 12px;
     }
     .quienes-somos .contendos {
-    margin-top: 0 !important;
-    margin-bottom: 0 !important;
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
     }
     
     .quienes-somos .partecuatro .conten {
-    right: 0;
-    padding-top: 8% !important;
-    position: absolute;
-    margin-right: 9% !important;
+        right: 0;
+        padding-top: 8% !important;
+        position: absolute;
+        margin-right: 9% !important;
     }
     
     .quienes-somos .primeraimagen {
-    height: 300px;
-    width: 90%;
-    margin: 0 auto;
+        height: 300px;
+        width: 90%;
+        margin: 0 auto;
     }
     
     .containercolor {
-    width: 90%;
-    margin: 0 auto;
+        width: 90%;
+        margin: 0 auto;
     }
     
     .quienes-somos .tresimg{    
-    display: flex;
+        display: flex;
     }
     
     .central {
-    width: 100% !important;
+        width: 100% !important;
     }
   
 /*estilos seccion quienes somos*/
 
     .quienes-somos .container{
-    width: 100%;
-    margin: 0 auto !important;
+        width: 100%;
+        margin: 0 auto !important;
     }
     
     .contenidopartedos h1 {
-    font-size: 40px;
-    margin-top: 35px;
+        font-size: 40px;
+        margin-top: 35px;
     }
     
     .contenedorsecciondos .contendos {
-    margin-top: 0 !important;
+        margin-top: 0 !important;
     }
 
 /*estilos seccion contacto*/
 
     .containertarjeta {
-    padding-bottom: 14%;
+        padding-bottom: 14%;
     }
     
     .fondoimg {
-    height: 106%;
+        height: 106%;
     }
 
 /*estilos home parte 1*/
@@ -2987,27 +2994,45 @@ p.contenidodos.contenidotres::before {
  /*estilos home parte footer*/
     
     .footeruno {
-    float: left;
+        float: left;
     }
     
     .footerdos {
-    float: left;
+        float: left;
     }
     
     .footertres {
-    float: left;
+        float: left;
     }
  /*estilos shop */
 
     .verproductoshop {
-    font-size: 12px !important;
+        font-size: 12px !important;
     }
 
     .woocommerce ul.products[class*=columns-] li.product, .woocommerce-page ul.products[class*=columns-] li.product {
-    width: 45% !important;
-    float: left !important;
-    clear: none !important;
-    margin: 15px !important;
+        width: 45% !important;
+        float: left !important;
+        clear: none !important;
+        margin: 15px !important;
+    }
+    .woocommerce-account .woocommerce-MyAccount-content {
+        width: 100% !important;
+    }
+    .woocommerce table.shop_table_responsive tr td, .woocommerce-page table.shop_table_responsive tr td {
+        text-align: center!important; 
+    }
+    
+    .page-my-account-data .woocommerce-info {
+        border-top-color: snow;
+        height: auto;
+        position: absolute;
+        background: white;
+        top: 0;
+    }
+    
+    .page-my-account-data .woocommerce-info:before{
+        display: none;
     }
 }
 @media only screen and (max-width: 740px) {
@@ -3019,19 +3044,26 @@ p.contenidodos.contenidotres::before {
     }
 }
 @media only screen and (max-width: 550px) {
-.verproductoshop{
-    font-size: 10px !important;
-    padding: 0 !important;
-}
-.product-template-default .add_to_cart_button {
-    width: 35px !important;
-    height: 35px !important;
-}
-.woocommerce div.product div.images .woocommerce-product-gallery__trigger{
-    right: 610em !important;
-}
+    .verproductoshop{
+        font-size: 10px !important;
+        padding: 0 !important;
+    }
+    .product-template-default .add_to_cart_button {
+        width: 35px !important;
+        height: 35px !important;
+    }
+    .woocommerce div.product div.images .woocommerce-product-gallery__trigger{
+        right: 610em !important;
+    }
 }
 @media only screen and (max-width: 465px) {
+    .page-my-account-data .woocommerce-info {
+        border-top-color: snow;
+        height: auto;
+        position: absolute;
+        background: white;
+        top: 0;
+    }
     .page-template-default .cart_totals .wc-proceed-to-checkout {
         width: 100% !important;
     }
@@ -3255,6 +3287,9 @@ p.contenidodos.contenidotres::before {
 @media only screen and (max-width: 620px) {
     .page-template-default .cart_totals .wc-proceed-to-checkout {
         width: 100% !important;
+    }
+    .page-my-account-data .woocommerce-info a{
+        display: none;
     }
 
 /*estilos home parte 1*/
@@ -3634,6 +3669,9 @@ p.contenidodos.contenidotres::before {
 }
 
 @media only screen and (max-width: 460px) {
+    .link-cerrar {
+        display: none;
+    }
     .flex-viewport{
         height: 202px !important;
     }
@@ -3925,7 +3963,9 @@ img.logo-menusecundario {
 }
 
 @media only screen and (max-width: 370px) {
-    
+    .link-cerrar {
+        display: none;
+    }
 /*estilos home parte tienda*/   
     
     .containerselec a {
@@ -4290,7 +4330,12 @@ img.logo-menusecundario {
 
 }
 @media only screen and (max-width: 350px) {
-  
+    .link-cerrar{
+        display: none;
+    }
+    .woocommerce form .form-row label {
+        padding-bottom: 3%;
+    }
     .page-header {
     height: 200px;
     }
@@ -4305,8 +4350,6 @@ img.logo-menusecundario {
     padding: 6px;
     font-size: 9px;
     }
-    
-    
 }
 .img404{
     width: 100% ;
@@ -4384,7 +4427,7 @@ img.logo-menusecundario {
 
 .content blockquote:not(:last-child), .content dl:not(:last-child), .content ol:not(:last-child), .content p:not(:last-child), .content pre:not(:last-child), .content table:not(:last-child), .content ul:not(:last-child) {
     margin-bottom: 0;
- }
+}
 .botonbloquiado{
     background-color: #fff!important;
     border-radius: 0!important;
@@ -4397,15 +4440,15 @@ img.logo-menusecundario {
     text-align: center!important;
     text-transform: uppercase!important;
     transition: .5s;
- }
- .modalactiva{
+}
+.modalactiva{
     opacity: 1;
     transition: 0.5s;
- }
- .modalcerrada{
+}
+.modalcerrada{
     opacity: 0;
     transition: 0.5s;
- }
+}
 .modal-card{
     position: absolute;
     top: 50%;
@@ -4701,6 +4744,13 @@ span.prdctfltr_showing {
     .woocommerce-account .posts .containerposts{
         margin-top: 45% !important;
     }
+    .woocommerce-account .woocommerce-MyAccount-navigation {
+        width: 100%;
+        padding-bottom: 5%;
+    }
+    .woocommerce-MyAccount-navigation ul {
+        border-right: 0px solid #f1f1f1; 
+    }
 }
 .product-category{
     display: none !important;
@@ -4718,3 +4768,100 @@ span.prdctfltr_showing {
     font-size:40px;
 }
 /*FIN DE LOS CAMBIOOS*/
+
+
+/*animaciones*/
+.menusecundario .link::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    top: -2px;
+    left: -2px;
+    border: 2px solid transparent; 
+    position: absolute;
+}
+.menusecundario .link:hover::before{
+    animation: animate 0.5s linear forwards;
+}
+@keyframes animate{
+    0%{
+        width: 0;
+        height: 0;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+    50%{
+        width: 100%;
+        height: 0;
+        border-top-color: black;
+        border-right-color: black;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+    100%{
+        width: 100%;
+        height: 100%;
+        border-top-color: black;
+        border-right-color: black;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+}
+.menusecundario .link::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    top: -2px;
+    left: -2px;
+    border: 2px solid transparent; 
+    position: absolute;
+}
+.menusecundario .link:hover::after{
+    animation: animate2 0.5s linear forwards;
+    animation-delay: 0.5s;
+}
+@keyframes animate2{
+    0%{
+        width: 0;
+        height: 0;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: black;
+    }
+    50%{
+        width: 0;
+        height: 100%;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: black;
+    }
+    100%{
+        width: 100%;
+        height: 100%;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: black;
+        border-left-color: black;
+    }
+}
+.menu-item a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    transition: 0.5s;
+    border-top: 2px solid black;
+}
+
+.menu-item a:hover::after{
+    transition: 0.5s;
+    width: 100% !important;
+}
+/*fin de las animaciones*/
