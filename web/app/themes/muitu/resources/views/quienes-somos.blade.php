@@ -7,7 +7,7 @@
 
 @section('content')
 
-<div class="secciondos">
+<div class="secciondos animated fadeInUp">
     <div class="contenedorsecciondos is-marginless columns is-multiline">
         <div class="imgparteuno">
             <img class="logoparteuno" src="/app/uploads/2018/06/iso-white.png" alt="" />
@@ -17,7 +17,7 @@
         </div>
     </div>
 </div>
-<div class="partedos">
+<div class="partedos animated fadeInUp">
     <p>{{ the_field('partedos', 44)}}</p>
 </div>
 
@@ -25,7 +25,7 @@
 @if(have_rows('partetres', 44))
 {{-- loop through the rows of data --}}
 @while (have_rows('partetres', 44))@php(the_row())
-    <div class="parteuno partetres">
+    <div class="parteuno partetres an">
         <div class="contenedorsecciondos is-marginless columns is-multiline">
             <div class="contendos column is-5">
               <p class="contenidodos contenidotres">{{ get_sub_field('partetext') }}</p>
@@ -38,13 +38,13 @@
 @else      
 @endif
 
-<div class="partedos">
+<div class="partedos an">
     <p>{{ the_field('seccion_medio', 44)}}</p>
 </div>
 @if(have_rows('partecuatro', 44))
 {{-- loop through the rows of data --}}
 @while (have_rows('partecuatro', 44))@php(the_row())
-    <div class="parteuno partecuatro">
+    <div class="parteuno partecuatro an">
         <div class="contenedorseccionuno contenedorseccionuno is-marginless columns is-multiline">
             <div class="imgseccion column is-5" style="position: relative;left: 0;
             background-size: cover !important; height: 100%; background:url('{{ get_sub_field('imgcontenedordos') }}')"></div>
@@ -56,7 +56,7 @@
 @endwhile
 @else      
 @endif
-<div class="partedos">
+<div class="partedos an">
     <div class="titleseccionseis">
         <h1>Nuestra Determinacion</h1>
         <h2>Proposito</h2>
@@ -115,7 +115,7 @@
         <p class="contenidoseis contenidoabajo">{{ get_sub_field('contenidoAbajo') }}</p>	
     </div>    
 </div>
-<div class="tresimg is-marginless columns is-multiline">
+<div class="tresimg is-marginless columns is-multiline an">
     <div class="column is-4 is-paddingless">
     <div class="imagenprimera " style="background:url('{{ get_sub_field('primeraImagenAbajo') }}');background-size: cover;
     height: 300px;"></div></div>
@@ -132,7 +132,7 @@
 @else      
 @endif
 
-<div class="partedos">
+<div class="partedos an">
     <div class="titleseccionseis">
         <h1>Nuestro Cometido</h1>
         <h2>Mision</h2>
@@ -140,46 +140,46 @@
     @if(have_rows('seccion_siete', 44))
     {{-- loop through the rows of data --}}
     @while (have_rows('seccion_siete', 44))@php(the_row())
-        <div class="parteseis seccionseis">
-            <p class="contenidoseis">{{ get_sub_field('contenidoArriba') }}</p>
-            <div class="contenedorimg is-marginless columns is-multiline">
-                <div class="imgcentral has-text-centered columns">
-                    <div class="secundariaimg column is-4 is-paddingless">
-                        <div class="imagenprimera" style="background:url('{{ get_sub_field('primeraImagen') }}');background-size: cover;
-                        height: 100%;"></div>
-                    </div>
-                    <div class="primeraimagen column is-4 is-paddingless">
-                        <div class="imagenprimera imagenmedio" style="background:url('{{ get_sub_field('segundaImagen') }}');background-size: cover;
-                        height: 100%;"></div>
-                    </div>
-                    <div class="secundariaimg column is-4 is-paddingless">
-                        <div class="imagenprimera" style="background:url('{{ get_sub_field('terceraImagen') }}');background-size: cover;
-                        height: 100%;"></div>
-                    </div>
+    <div class="parteseis seccionseis ">
+        <p class="contenidoseis">{{ get_sub_field('contenidoArriba') }}</p>
+        <div class="contenedorimg is-marginless columns is-multiline">
+            <div class="imgcentral has-text-centered columns">
+                <div class="secundariaimg column is-4 is-paddingless">
+                    <div class="imagenprimera" style="background:url('{{ get_sub_field('primeraImagen') }}');background-size: cover;
+                    height: 100%;"></div>
+                </div>
+                <div class="primeraimagen column is-4 is-paddingless">
+                    <div class="imagenprimera imagenmedio" style="background:url('{{ get_sub_field('segundaImagen') }}');background-size: cover;
+                    height: 100%;"></div>
+                </div>
+                <div class="secundariaimg column is-4 is-paddingless">
+                    <div class="imagenprimera" style="background:url('{{ get_sub_field('terceraImagen') }}');background-size: cover;
+                    height: 100%;"></div>
                 </div>
             </div>
-            <p class="contenidoseis contenidoabajo">{{ get_sub_field('contenido_abajo') }}</p>
         </div>
+        <p class="contenidoseis contenidoabajo">{{ get_sub_field('contenido_abajo') }}</p>
+    </div>
+</div>
+    <div class="tresimg is-marginless columns is-multiline an">
+        <div class="column is-4 is-paddingless">
+            <div class="imagenprimera " style="background:url('{{ get_sub_field('primeraImagenAbajo') }}');background-size: cover;
+            height: 300px;"></div>
         </div>
-        <div class="tresimg is-marginless columns is-multiline">
-            <div class="column is-4 is-paddingless">
-                <div class="imagenprimera " style="background:url('{{ get_sub_field('primeraImagenAbajo') }}');background-size: cover;
-                height: 300px;"></div>
-            </div>
-            <div class="column is-4 is-paddingless">
-                <div class="imagenprimera" style="background:url('{{ get_sub_field('segundaImagenAbajo') }}');background-size: cover;
-                height: 300px;"></div>
-            </div>
-            <div class="column is-4 is-paddingless">
-                <div class="imagenprimera" style="background:url('{{ get_sub_field('terceraImagenAbajo') }}');background-size: cover;
-                height: 300px; "></div>
-            </div>
+        <div class="column is-4 is-paddingless">
+            <div class="imagenprimera" style="background:url('{{ get_sub_field('segundaImagenAbajo') }}');background-size: cover;
+            height: 300px;"></div>
         </div>
+        <div class="column is-4 is-paddingless">
+            <div class="imagenprimera" style="background:url('{{ get_sub_field('terceraImagenAbajo') }}');background-size: cover;
+            height: 300px; "></div>
+        </div>
+    </div>
     @endwhile
     @else      
     @endif  
 
-    <div class="partedos">
+    <div class="partedos an">
         <div class="titleseccionseis">
             <h1>Nuestro Perspectiva</h1>
             <h2>Vision</h2>
@@ -198,20 +198,20 @@
                 <p class="contenidoseis">{{ get_sub_field('contenidoAbajo') }}</p>
             </div>        
         </div>
-        <div class="tresimg is-marginless columns is-multiline">
-                <div class="column is-4 is-paddingless">
-                    <div class="imagenprimera " style="background:url('{{ get_sub_field('primeraImagenAbajo') }}');background-size: cover;
-                    height: 300px;"></div>
-                </div>
-                <div class="column is-4 is-paddingless">
-                    <div class="imagenprimera" style="background:url('{{ get_sub_field('segundaImagenAbajo') }}');background-size: cover;
-                    height: 300px;"></div>
-                </div>
-                <div class="column is-4 is-paddingless">
-                    <div class="imagenprimera" style="background:url('{{ get_sub_field('terceraImagenAbajo') }}');background-size: cover;
-                    height: 300px; "></div>
-                </div>
-            </div>       
+        <div class="tresimg is-marginless columns is-multiline an">
+            <div class="column is-4 is-paddingless">
+                <div class="imagenprimera " style="background:url('{{ get_sub_field('primeraImagenAbajo') }}');background-size: cover;
+                height: 300px;"></div>
+            </div>
+            <div class="column is-4 is-paddingless">
+                <div class="imagenprimera" style="background:url('{{ get_sub_field('segundaImagenAbajo') }}');background-size: cover;
+                height: 300px;"></div>
+            </div>
+            <div class="column is-4 is-paddingless">
+                <div class="imagenprimera" style="background:url('{{ get_sub_field('terceraImagenAbajo') }}');background-size: cover;
+                height: 300px; "></div>
+            </div>
+        </div>       
         @endwhile
         @else      
         @endif          

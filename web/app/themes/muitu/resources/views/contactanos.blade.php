@@ -8,14 +8,14 @@
 
 
     <div class="tituloarribacontac">
-      <h3 class="titlecontactanos">¿Quieres decir hola?</h3>
+      <h3 class="titlecontactanos animated fadeInUp">¿Quieres decir hola?</h3>
     </div>
 
-    <div class="containercontactanos is-marginless columns is-multiline">
+    <div class="containercontactanos is-marginless columns is-multiline ">
         @if(have_rows('tarjeta', 97))
         {{-- loop through the rows of data --}}
         @while (have_rows('tarjeta', 97))@php(the_row())
-            <div class="tarjetauna column is-4">
+            <div class="tarjetauna column is-4 animated fadeInUp">
                 <div class="fondoimg"></div>
                 <div class="containertarjeta">
                     <h3 class="name">{{ get_sub_field('name') }}</h3>
@@ -55,10 +55,10 @@
             </div>
         </div>
     </div>
-    <div class="tituloarribacontac titlecontacabajo">
+    <div class="tituloarribacontac titlecontacabajo an">
         <h3 class="titlecontactanos">CONTACTANOS:</h3>
     </div>
-    <div class="tarjetaabajo">
+    <div class="tarjetaabajo an">
         <p class="nrotlf">+341 667 32 81 19</p>
         <p class="correoabajo">info@muituhandmade.com</p>
         <p class="direccionabajo">calle amado nervo. 5. piso 2 a madrid 28007</p>

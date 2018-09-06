@@ -13,12 +13,12 @@
 
     <div class="posts columns">     
     <div class="containerposts columns is-multiline">
-        <h1 class="titlearriba">Articulos recientes</h1><br>
-        <p class="conteposts">Conoce sobre las comunidades que le han dado vida a cada producto que distribuimos, su cultura, su lenguaje y su amor</p><br>
+        <h1 class="titlearriba animated fadeInUp">Articulos recientes</h1><br>
+        <p class="conteposts animated fadeInUp">Conoce sobre las comunidades que le han dado vida a cada producto que distribuimos, su cultura, su lenguaje y su amor</p><br>
          
     <!--Esta pagina es de productos-->
     @foreach($posts_loop as $posts)
-    <div class="containerpost column is-9">
+    <div class="containerpost column is-9 an">
       <div class="img-container">
       <!--Esto es el thumb-->
       {!! $posts['thumbnail'] !!}

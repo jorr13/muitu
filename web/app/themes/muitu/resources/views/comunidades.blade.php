@@ -8,11 +8,11 @@
 @section('content')
   @while(have_posts()) @php the_post() @endphp
     @include('partials.content-page')
-    <div class="posts columns">     
+    <div class="posts columns ">     
       <div class="containerposts columns is-multiline">
-        <h1 class="titlearriba">Comunidades</h1><br>
+        <h1 class="titlearriba an">Comunidades</h1><br>
         @foreach($comunidades_loop as $comunidades)
-          <div class="containerpost column is-9">
+          <div class="containerpost column is-9 an">
             <div class="img-container">
             <!--Esto es el thumb-->
             {!! $comunidades['thumbnail'] !!}

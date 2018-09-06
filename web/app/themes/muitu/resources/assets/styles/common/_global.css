@@ -1224,6 +1224,9 @@ p.contenidodos.contenidotres::before {
     font-size: 16px !important;
     margin-top: 50px;
 }
+.botonmodal{
+    cursor: pointer;
+}
 .primeraimagen{
     height: 240px;
 }
@@ -1275,6 +1278,9 @@ p.contenidodos.contenidotres::before {
 /*FIN DEL QUIENES SOMOS------------------------------*/
 
 /*Contactanos----------------------------------------*/
+.modal-card-body:after{
+    display: none;
+}
 #registrar-usuario{
     margin-left: 15%;
 }
@@ -4861,7 +4867,8 @@ span.prdctfltr_showing {
 }
 
 .menu-item a:hover::after{
-    transition: 0.5s;
+    transition: 1s;
     width: 100% !important;
+    
 }
 /*fin de las animaciones*/

@@ -1,13 +1,13 @@
 @extends('layouts.app')
 @section('content')
   <!--slider-->
-  <div class="slideshow ">
+  <div class="slideshow animated zoomIn">
 		<div class="tituloslider">
 			<h1> Productos recientes</h1>
     </div>
 		<ul class="slider">
          @foreach($products_loop as $products)
-            <li>
+            <li >
                 <div class="sliderimagen ">
                     <!--Esto es el thumb-->
                     {!! $products['thumbnail'] !!}
@@ -32,9 +32,9 @@
   @if(have_rows('seccionuno', 2))
     {{-- loop through the rows of data --}}
     @while (have_rows('seccionuno', 2))@php(the_row())
-    <div class="seccionuno an">
+    <div class="seccionuno">
       <div class="contenedorseccionuno contenedorseccionuno is-marginless columns is-multiline">
-      	<div class="imgseccion column is-5 " style="background:url('{{ get_sub_field('img') }}'); background-size: cover; height: 100%; "></div>	
+      	<div class="imgseccion column is-5 an" style="background:url('{{ get_sub_field('img') }}'); background-size: cover; height: 100%; "></div>	
 	      	<div class="conten column is-5 an">
 	      	  <h1 class="titleseccionuno">{{ get_sub_field('titulo') }}</h1>
             <p class="contenidouno">{{ get_sub_field('descripcion') }}</p>
@@ -152,7 +152,7 @@
         <div class="contenedorsecciondos is-marginless columns is-multiline">
             <div class="column is-1" style="
             height: 100%;"></div>
-            <div class="contendos column is-5">
+            <div class="contendos column is-5 an">
                 <h1 class="titlesecciondos an">{{ get_sub_field('titulo') }}</h1>
               <p class="contenidodos an">{{ get_sub_field('descripcion') }}</p>
               @php ( $link = get_sub_field('boton'))
@@ -160,7 +160,7 @@
               <a class="botonseccion" href="{{$link['url']}}" target="{{$link['target']}}">{{$link['title']}}</a>
               @endif
           </div>
-        <div class="imgseccion column is-5" style="position: absolute;right: 0;
+        <div class="imgseccion column is-5 an" style="position: absolute;right: 0;
         background-size: cover !important; background-size: cover !important; height: 100%; background:url('{{ get_sub_field('img') }}')"></div>
         </div>
       </div>

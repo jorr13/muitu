@@ -212,8 +212,16 @@ function my_text_strings( $translated_text, $text, $domain ) {
         break;
         case 'Return to shop' :
         $translated_text = __( 'Tienda', 'woocommerce' );
-            break;
-
+        break;
+        case 'From your account dashboard you can view your ':
+        $translated_text = __( 'Desde el panel de su cuenta puede ver su', 'woocommerce-page' );
+        break;
+        case 'recent orders':
+        $translated_text = __( 'ordenes recientes', 'woocommerce-page' );
+        break;
+        case ', manage your ':
+        $translated_text = __( 'administrar su', 'woocommerce-page' );
+        break;
     }
     return $translated_text;
 }
