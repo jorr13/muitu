@@ -56,6 +56,9 @@ display: none;
 .menu-item{
     position: relative;
     padding: 16px;
+    clip: rect(0,317px,auto,auto);
+    display: block;
+    overflow: hidden;
 }
 .menu-item a{
     position: relative;
@@ -65,15 +68,24 @@ display: none;
     text-decoration: none;
 }
 .sub-menu{
-   height: 0px;
-   overflow: hidden;
-   transition: ease-out 0.3s;
+    height: 0px;
+    transition: ease-out 0.3s;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: relative;
+    display: block;
+    transform: translateX(35px);
+    padding-right: 55px;
 }
 #menu-item-98:hover .sub-menu{
-   height: 230px;
+   height: 268px;
+
 }
 #menu-item-105:hover .sub-menu{
-    height: 230px;
+    height: 268px;
+
+
 }
 .imagen{
     padding: 20px 58px;
@@ -317,6 +329,7 @@ footer .container {
     height: 50px;
 }
 .botonfooter{
+    background-color: transparent;
     font-weight: 700;
     font-size: 12px;
     text-transform: uppercase;
@@ -351,6 +364,11 @@ footer .container {
 .logos{
     margin-bottom: 32px;
     width: 31px;
+    transition: 0.5s;
+}
+.logos:hover {
+    transition: 0.5s;
+    transform: scale(1.20);
 }
 .logos1{
     margin-left: 15px;
@@ -575,7 +593,8 @@ a.link.posts-link {
 }
 .page-template-default .woocommerce-Price-amount {
     text-decoration: none !important;
-    font-weight: 0 !important;
+    font-weight: 100 !important;
+    font-size: 15px !important;
 }
 .page-template-default .woocommerce-loop-product__title{
     height: 52px;
@@ -802,6 +821,9 @@ h2.woocommerce-loop-product__title {
     transition: 0.5s;
     background-color: #7E8E71 !important;
 }
+.content blockquote{
+    margin-top: 5%;
+}
 
 /*FIN DEL CARITOOOOOOOOOOOOOOOOOO--------------------------*/
 .post-template-default .containerposts{
@@ -962,7 +984,9 @@ h2.woocommerce-loop-product__title {
 }
 @media screen and (max-width: 600px){
 
-
+    .woocommerce-page .posts .containerposts {
+        margin-top: 35% !important;
+    }
     .modal-card {
         width: 450px !important;
         left: 46% !important;
@@ -980,9 +1004,6 @@ h2.woocommerce-loop-product__title {
     .page-template-posts .posts {
         margin-top: 20% !important;
     }
-        
-
-        
     .product-template-default .posts .containerposts {
         margin-top: 15% !important;
     }
@@ -2112,6 +2133,10 @@ p.contenidodos.contenidotres::before {
     }
 }
 @media only screen and (max-width: 768px) {
+    .sub-menu{
+        padding-right: 70px;
+
+    }
  
     #registrar-usuario {
         margin-left: 0;
@@ -2122,6 +2147,9 @@ p.contenidodos.contenidotres::before {
     }
 }
 @media only screen and (max-width: 550px) {
+    .onsale::after {
+        left: 30px !important;
+    }
     .page-cart-data .posts .containerposts {
         margin-top: 50%;
     }
@@ -2487,7 +2515,6 @@ p.contenidodos.contenidotres::before {
     
     .footer{
     height: 500px;
-    margin-top: -22px !important;
     padding-top: 20px;
     }
 
@@ -2508,6 +2535,15 @@ p.contenidodos.contenidotres::before {
 }
 
 @media only screen and (max-width: 850px) {
+    .page-template-comunidades .posts .containerposts {
+        margin-top: 25% !important;
+    }
+    .page-template-blog .containerposts {
+        margin-top: 25% !important;
+    }
+    .woocommerce-page .posts .containerposts {
+        margin-top: 22% !important;
+    }    
 
 /*estilos pagina quienes somos*/
 
@@ -2526,7 +2562,7 @@ p.contenidodos.contenidotres::before {
     }
     
     .partedos .titleseccionseis h1 {
-    font-size: 40px !important;
+    font-size: 30px !important;
     }
     
     .contenidopartedos h1 {
@@ -3130,9 +3166,7 @@ p.contenidodos.contenidotres::before {
     margin-top: -10% !important;
     }
     
-    .post-template-default .posts {
-    margin-top: 15% !important;
-    }
+
     
     .format-standard h1 {
     font-size: 22px;
@@ -3156,6 +3190,7 @@ p.contenidodos.contenidotres::before {
     
     .format-standard p, ol, ul {
     font-size: 12px;
+    margin-top: 5%;
     }
     
 /*estilos seccion comentarios*/
@@ -3272,7 +3307,7 @@ p.contenidodos.contenidotres::before {
     }
     
     .contenido {
-    margin-top: 40%;
+    margin-top: 15%;
     width: 100%;
     }
     
@@ -3384,6 +3419,11 @@ p.contenidodos.contenidotres::before {
     }
 }
 
+@media only screen and (min-width: 560px) {
+    .product-template-default .posts .containerposts {
+        margin-top: 30% !important;
+    }
+}
 
 @media only screen and (min-width: 550px) {
 
@@ -3477,7 +3517,7 @@ p.contenidodos.contenidotres::before {
  /*estilos home parte 4*/
 
     .contenedorsecciondos .contendos {
-    top: -50px;
+    top: -100px;
     width: 85%;
     margin: 0 auto !important;
     padding: 0;
@@ -3490,8 +3530,7 @@ p.contenidodos.contenidotres::before {
     
     .contenedorsecciondos .imgseccion {
     width: 85%;
-    margin: 0 auto !important;
-    height: 45% !important;
+    height: 54% !important;
     float: none !important;
     position: relative !important;
     margin-top: -29%;
@@ -3565,15 +3604,12 @@ p.contenidodos.contenidotres::before {
     margin: 0 auto;
     float: left;
     display: block;
-    padding-bottom: 10%;
+
     padding-top: 10%;
     padding-left: 10%;
     }
     
-    .logo-vertical{
-    display:none;
-    }
-    
+   
     .logo-horizontal{
     display:block;
     }
@@ -3605,7 +3641,7 @@ p.contenidodos.contenidotres::before {
     }
 
     .post-template-default .posts {
-    margin-top: 20% !important;
+    margin-top: -20% !important;
     }
   
 /*estilos home parte tienda*/   
@@ -3640,7 +3676,7 @@ p.contenidodos.contenidotres::before {
     .productitem {
     padding-top: 30px;
     width: 50%;
-    height: 45% !important;
+    height: 40% !important;
     }
     
     .contenidoproduct {
@@ -3660,8 +3696,8 @@ p.contenidodos.contenidotres::before {
     }
     
     .contenedorsecciondos .imgseccion {
-    top: -30%;
-    height: 43% !important;
+        top: -10%;
+        height: 54% !important;
     }
     
 
@@ -3672,6 +3708,14 @@ p.contenidodos.contenidotres::before {
     margin-top: 48%;
     }
 
+}
+@media only screen and (max-width: 480px) {
+    .contenedorsecciondos .contendos {
+        top: -60px;
+    }
+    .imgparteuno img {
+        margin-top: 20%;
+    }
 }
 
 @media only screen and (max-width: 460px) {
@@ -3685,6 +3729,7 @@ p.contenidodos.contenidotres::before {
 /*estilos seccion contacto*/
 
     .containertarjeta {
+        width: 108%;
     padding-bottom: 30%;
     }
     
@@ -3722,7 +3767,7 @@ p.contenidodos.contenidotres::before {
 /*estilos Page template*/
     
     .post-template-default .posts {
-    margin-top: 30% !important;
+    margin-top: -30% !important;
     }
     
     .format-standard h1 {
@@ -3786,11 +3831,6 @@ p.contenidodos.contenidotres::before {
     .productitem {
     padding-top: 20px;
     }
-    
-  
-    
-
-
 /*estilos home parte 4*/
 
     .contenedorsecciondos {
@@ -3802,8 +3842,8 @@ p.contenidodos.contenidotres::before {
     }
     
     .contenedorsecciondos .imgseccion {
-    top: -28%;
-    height: 42% !important;
+        top: -24%;
+        height: 70% !important
     }
 
     
@@ -3822,7 +3862,7 @@ p.contenidodos.contenidotres::before {
     }
     
     .footerdos {
-    padding-top: 34% !important;
+    padding-top: 54% !important;
     }
     
     .footertres {
@@ -3839,7 +3879,7 @@ img.logo-menusecundario {
     }
     
     .woocommerce-page .posts .containerposts {
-    margin-top: 32%;
+    margin-top: 45% !important;
     }
     
     .page-template-posts .posts {
@@ -3917,7 +3957,7 @@ img.logo-menusecundario {
 /*estilos home parte Blog*/
 
     .contenido {
-    margin-top: 50%;
+    margin-top: 25%;
     }
     
     .contenido p {
@@ -4199,18 +4239,14 @@ img.logo-menusecundario {
 
 }
 @media only screen and (max-width: 620px) {
-    .page-template-blog .containerposts{
-        margin-top: 22% !important;
-    }
+
     .page-template-comunidades .posts .containerposts{
-        margin-top: 22% !important;
+        margin-top: 26% !important;
     }
     .woocommerce-page .posts .containerposts {
-        margin-top: 22% !important;
+        margin-top: 35% !important;
     }
-    .product-template-default .posts .containerposts {
-        margin-top: 22% !important;
-    }
+
 }
 @media only screen and (max-width: 400px) {
     .page-id-10 .woocommerce::before{
@@ -4227,13 +4263,26 @@ img.logo-menusecundario {
         margin-top: 32% !important;
     }
     .woocommerce-page .posts .containerposts {
-        margin-top: 32% !important;
+        margin-top: 40% !important;
     }
     .product-template-default .posts .containerposts {
         margin-top: 32% !important;
     }
 }
 @media only screen and (max-width: 500px) {
+    .contendos h1:after{
+        display: none
+    }
+    .imgcentral {
+        margin-left: -36px;
+        width: 121%;
+    }
+    .footerdos {
+        padding-top: 45% !important;
+    }
+    .page-template-comunidades .posts .containerposts {
+        margin-top: 35% !important;
+    }
     .contenidotres{
         margin-top: -100px;
     }
@@ -4248,13 +4297,13 @@ img.logo-menusecundario {
         }
 
     .page-template-blog .containerposts{
-        margin-top: 25% ;
+        margin-top: 35% !important;
     }
     img.logo-menusecundario {
     width: 17% !important;
     }
     .woocommerce-page .posts .containerposts {
-    margin-top: 25%;
+    margin-top: 40% !important;
     }
     .woocommerce ul.products li.product .woocommerce-LoopProduct-link:after {
     font-size: 10px !important;
@@ -4274,21 +4323,22 @@ img.logo-menusecundario {
     height: 35px!important;
     }
     .page-template-posts .posts {
-    margin-top: 25% !important;
+    margin-top: 35% !important;
     }
     .product-template-default .posts .containerposts {
-    margin-top: 25% !important;
+    margin-top: 35% !important;
     }
     .page-template-comunidades .posts .containerposts {
-    margin-top: 25% ;
+    margin-top: 35% ;
     }
 }
 @media only screen and (max-width: 450px) {
-    
+    .partedos .titleseccionseis h1 {
+        font-size: 25px !important;
+    }
     .page-header {
     height: 250px;
     }
-    
     img.logo-menusecundario {
     margin-top: -2% !important;
     width: 19%!important;
@@ -4336,6 +4386,16 @@ img.logo-menusecundario {
 
 }
 @media only screen and (max-width: 350px) {
+    .page-template-blog .containerposts {
+        margin-top: 45% !important;
+    }
+    .containertarjeta {
+        width: 113%;
+    }
+
+    .woocommerce-page .posts .containerposts {
+        margin-top: 50% !important;
+    }
     .link-cerrar{
         display: none;
     }
@@ -4656,6 +4716,7 @@ fieldset{
     padding-bottom: 2%;
 }
 @media only screen and (max-width: 768px) {
+
     .page-id-10 .woocommerce::before{
         height: 64px !important;
         margin-top: -4% !important;  
@@ -4729,7 +4790,7 @@ span.prdctfltr_showing {
 }
 @media only screen and (max-width: 1024px) {
     .woocommerce-account .posts .containerposts{
-        margin-top: 25% !important;
+        margin-top: 35% !important;
     }
 }
 
@@ -4764,15 +4825,18 @@ span.prdctfltr_showing {
 
 #page-loader{
     position:fixed; 
-    background-color:black;
-    z-index:9999999999999999999999999999999; 
+    background-color:white;
+    z-index: 9999999;
     height: 100%; 
     width: 100%;
+    display: flex;
+    align-items: center;
 }
-#page-loader h2{
-    color:white;
-    font-size:40px;
+#page-loader svg{
+    width: 50%;
+    height: 50%;
 }
+
 /*FIN DE LOS CAMBIOOS*/
 
 

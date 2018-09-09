@@ -1,12 +1,9 @@
 // import external dependencies
 import 'jquery';
+import 'bulma-carousel/carousel.min';
 
 // Import everything from autoload
 import "./autoload/**/*"
-
-// Import node slider pro
-
-import "slider-pro"
 
 // import local dependencies
 import Router from './util/Router';

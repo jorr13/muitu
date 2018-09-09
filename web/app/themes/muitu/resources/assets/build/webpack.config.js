@@ -38,6 +38,10 @@ let webpackConfig = {
   module: {
     rules: [
       {
+        test: /\.vue$/,
+        loader: 'vue'
+      },
+      {
         enforce: 'pre',
         test: /\.js$/,
         include: config.paths.assets,
@@ -115,6 +119,9 @@ let webpackConfig = {
     ],
   },
   resolve: {
+    alias: {
+      'vue$': 'vue/dist/vue.esm.js' // 'vue/dist/vue.common.js' for webpack 1
+    },
     modules: [
       config.paths.assets,
       'node_modules',

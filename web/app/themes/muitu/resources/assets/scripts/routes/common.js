@@ -1,5 +1,8 @@
 export default {
   init() {
+    $(window).load(function(){
+      $('#page-loader').fadeOut(1000);
+      });
 
     $(".contacto").click(function (e) { 
       e.preventDefault();
@@ -98,30 +101,7 @@ function check_if_in_view() {
 }
 $window.on('scroll resize', check_if_in_view);
 $window.trigger('scroll');
-//animaciones2
-var $animation_elements1 = $('.status-publish');
-var $window1 = $(window);
 
-function animacion2() {
-  var window_height = $window1.height();
-  var window_top_position = $window1.scrollTop();
-  var window_bottom_position = (window_top_position + window_height);
-
-  $.each($animation_elements1, function() {
-    var $element = $(this);
-    var element_height = $element.outerHeight();
-    var element_top_position = $element.offset().top;
-    var element_bottom_position = (element_top_position + element_height);
-
-    //check to see if this current container is within viewport
-    if ((element_bottom_position >= window_top_position) &&
-      (element_top_position <= window_bottom_position)) {
-      $element.addClass('animated fadeInUp');
-    }
-  });
-}
-$window1.on('scroll resize', animacion2);
-$window1.trigger('scroll');
 
 },
   finalize() {

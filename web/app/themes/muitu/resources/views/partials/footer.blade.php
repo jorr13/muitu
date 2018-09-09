@@ -51,3 +51,13 @@
 
 </footer>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/4.13.0/bodymovin.min.js"></script>
+<script>  
+  var animation = bodymovin.loadAnimation({
+  container: document.getElementById('page-loader'),
+  renderer: 'svg',
+  loop: true,
+  autoplay: true,
+  path: 'https://www.muituhandmade.com/json/data.json'
+  });
+</script>

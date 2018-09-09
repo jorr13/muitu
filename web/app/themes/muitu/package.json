@@ -104,8 +104,20 @@
   },
   "dependencies": {
     "animate.css": "^3.7.0",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^9.0.0",
+    "babel-loader": "^8.0.2",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-register": "^6.26.0",
     "bulma": "^0.5.0",
+    "bulma-carousel": "^3.0.0",
     "jquery": "^3.3.1",
-    "slider-pro": "^1.4.0"
+    "slider-pro": "^1.4.0",
+    "vue": "^2.5.17",
+    "vue-loader": "^15.4.1",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.5.17"
   }
 }
