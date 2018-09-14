@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
   <!--slider-->
-  <div class="slideshow animated zoomIn">
+  <div class="slideshow">
 		<div class="tituloslider">
 			<h1> Productos recientes</h1>
     </div>
@@ -53,95 +53,12 @@
   
       <h1 class="titlenuevo">Lo nuevo de la tienda</h1>
 
-  <div class="posts newproduct an"> 
-      <div class="containerposts containerselec columns is-multiline">
-          <a href="#" id="clickbolsos" class="column is-3">BOLSOS</a>
-          <a href="#" id="clickpulceras" class="column is-3">PULCERAS</a>
-          <a href="#" id="clickhamacas" class="column is-3">HAMACAS</a>
-          <a href="#" id="clickcinturnes" class="column is-3">CINTURONES</a>
-
-        </div> 
-    <div class="containerposts containerproduct hamacas columns is-multiline" id="hamacas" style="display:none">
-      @foreach(array_slice($category_loop,0,4) as $category)
-
-      <div class="column productitem is-3">
-      <a href=" {!! $category['link'] !!}">
-        <div class="imgprod">
-          <!--Esto es el thumb-->
-          {!! $category['thumbnail'] !!}
-        </div>
-          <div class="contenidoproduct">
-            <h1>{!! $category['title'] !!}</h1>
-          </div>
-          <a href=" {!! $category['link'] !!}" class="botonproducto">Ver Producto</a>
-        </a>
-        </div>
-      @endforeach
-    </div>
-
-  <!--FIN HAMACAS-->
-   <!--BOLSOS-->
-   
-      <div class="containerposts containerproduct bolsos columns is-multiline" id="bolsos">
-        @foreach(array_slice($bolsos_loop,0,4) as $bolsos)
-        <div class="column productitem is-3">
-          <a href=" {!! $bolsos['link'] !!}">
-            <div class="imgprod">
-              <!--Esto es el thumb-->
-              {!! $bolsos['thumbnail'] !!}
-            </div>
-              <div class="contenidoproduct">
-                <h1>{!! $bolsos['title'] !!}</h1>
-            </div>
-            <a href=" {!! $bolsos['link'] !!}" class="botonproducto">Ver Producto</a>
-          </a>
-          </div>
-        @endforeach
-      </div>
-
-   <!--FIN BOLSOS-->
-      <!--CINTURONES-->
-    
-      <div class="containerposts containerproduct cinturones columns is-multiline" id="cinturones"  style="display:none">
-        @foreach(array_slice($cinturones_loop,0,4) as $cinturones)
-        <div class="column productitem is-3">
-            <a href=" {!! $cinturones['link'] !!}">
-          <div class="imgprod">
-            <!--Esto es el thumb-->
-            {!! $cinturones['thumbnail'] !!}
-          </div>
-            <div class="contenidoproduct">
-              <h1>{!! $cinturones['title'] !!}</h1>
-            </div>
-            <a href=" {!! $cinturones['link'] !!}" class="botonproducto">Ver Producto</a>
-            </a>
-          </div>
-        @endforeach
-      </div>
-
-   <!--FIN CINTURON-->
-    <!--PULCERAS-->  
-      <div class="containerposts containerproduct pulceras columns is-multiline" id="pulceras"  style="display:none">
-        @foreach(array_slice($pulceras_loop,0,4) as $pulceras)
-        <div class="column productitem is-3">
-            <a href=" {!! $pulceras['link'] !!}">
-          <div class="imgprod">
-            <!--Esto es el thumb-->
-            {!! $pulceras['thumbnail'] !!}
-          </div>
-            <div class="contenidoproduct">
-              <h1>{!! $pulceras['title'] !!}</h1>
-            </div>
-            <a href=" {!! $pulceras['link'] !!}" class="botonproducto">Ver Producto</a>
-            </a>
-          </div>
-        @endforeach
-      </div>
-     <div class="containerposts column botoncontainer ir-a-tienda">
-      <a class="botonposts botonfooter" href="/shop">Ir a la tienda</a>
-     </div>
-     
-     
+  <div class="posts newproduct an" id="app"> 
+    <div class="containerposts containerselec columns is-multiline" v-for="(item, index) in lists">
+      <a href="#" v-on:click="obtenerProducto(item.id)" v-bind:data-id="item.id" ref="el" class="column is-3">
+        {{ item.name }}
+      </a>
+    </div> 
   </div>
   <!--FIN PULCERAS-->
   <!--piezas unicas-->

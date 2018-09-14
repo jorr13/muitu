@@ -2542,7 +2542,7 @@ p.contenidodos.contenidotres::before {
         margin-top: 25% !important;
     }
     .woocommerce-page .posts .containerposts {
-        margin-top: 22% !important;
+        margin-top: 30% !important;
     }    
 
 /*estilos pagina quienes somos*/
@@ -3423,6 +3423,9 @@ p.contenidodos.contenidotres::before {
     .product-template-default .posts .containerposts {
         margin-top: 30% !important;
     }
+    .woocommerce ul.products li.product .price {
+        font-size: 13px !important;
+    }
 }
 
 @media only screen and (min-width: 550px) {
@@ -4242,9 +4245,6 @@ img.logo-menusecundario {
 
     .page-template-comunidades .posts .containerposts{
         margin-top: 26% !important;
-    }
-    .woocommerce-page .posts .containerposts {
-        margin-top: 35% !important;
     }
 
 }

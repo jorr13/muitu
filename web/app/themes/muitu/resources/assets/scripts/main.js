@@ -2,6 +2,18 @@
 import 'jquery';
 import 'bulma-carousel/carousel.min';
 
+
+// Import IE polyfill for Vue
+import "babel-polyfill";
+
+// Require Vue
+
+import Vue from 'vue';
+window.axios = require('axios');
+
+Vue.component('listar-producto', require('./vue/listar-producto.vue'));
+
+
 // Import everything from autoload
 import "./autoload/**/*"
 
