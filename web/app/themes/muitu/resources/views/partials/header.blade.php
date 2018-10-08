@@ -1,3 +1,13 @@
+<!--<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script>  
+	$(window).load(function(){
+	$('#page-loader').fadeOut(5000);
+  });
+  </script>
+    <div id="page-loader" class="preloader-muitu">
+      <h2>hola mundo este es mi preloader bien bonito</h2>
+    </div>-->
+
 <header class="banner">
     <a href="#" class="botonmenu logomenuprimario otraclase" style="z-index: 999999999 !important;"><img src="/app/uploads/2018/06/hamburguesa1.png" alt="" class="botoninterno"></a>   
     <div class="column is-2 is-paddingless  menuprimario">
@@ -18,7 +28,18 @@
     <div class="column is-10 is-pulled-right menusecundario has-text-right">
     <a href="http://www.muituhandmade.com/"><img class="logo-menusecundario" src="{{ home_url('/app/uploads/2018/06/Logo-02.png') }}" alt=""></a>
       <a href="/cart/" class="link">Carrito</a>
-      <a href="/my-account/" class="link">Iniciar Sesion</a>
-
+      
+      @php
+      global $current_user;
+      get_currentuserinfo();
+      @endphp
+      @if ('' == $current_user->ID) 
+      <a href="{{ home_url('/') }}my-account/" class="link">Iniciar Sesion</a>
+      @else 
+    <a href="{{ home_url('/') }}my-account/" class="link">{{ $current_user->display_name }}</a> <a href="{{ home_url('/') }}my-account/customer-logout" class="link-cerrar">Cerrar Sesion</a>
+      @endif
     </div>
+
+
+
 </header>

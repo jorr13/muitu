@@ -3,7 +3,7 @@
   <!--slider-->
   <div class="slideshow">
 		<div class="tituloslider">
-			<h1>Productos recientes</h1>
+			<h1> Productos recientes</h1>
     </div>
 		<ul class="slider">
          @foreach($products_loop as $products)

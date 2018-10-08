@@ -470,6 +470,12 @@ a.link.posts-link {
 .botonposts a{
  color: black;
 }
+.containerpost:nth-of-type(2n+2) a.link.posts-link{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 45px
+}
 /*imagenes alternadas en los post*/
 .containerpost:nth-of-type(2n+2) .img-container{
     position: absolute;
@@ -4485,6 +4491,121 @@ img.logo-menusecundario {
     z-index: 999999999 !important;
     visibility: visible !important;
 }
+.link-cerrar{
+    color: black;
+}
+.woocommerce-MyAccount-navigation{
+    width: 34%;
+}
+.woocommerce-MyAccount-navigation ul{
+    list-style: none;
+    border-right: solid 1px #F1F1F1;
+}
+.woocommerce-MyAccount-navigation ul li{
+    height: 43px;
+    padding: 3%;
+    transition: 0.5s;
+}
+.woocommerce-MyAccount-navigation ul li a{
+    color: black;
+}
+.woocommerce-MyAccount-navigation ul li:hover{
+background-color: #F1F1F1;
+border-left: 4px solid #778667;
+transition: 0.5s;
+}
+.woocommerce-account .woocommerce-MyAccount-content{
+    width: 60%;
+    margin-top: 7%;
+    padding-left: 4%;
+    font-size: 12px;
+}
+.woocommerce table.my_account_orders .button{
+    padding: 14px 13px !important;
+}
+.woocommerce-account .woocommerce-MyAccount-content p{
+    padding-bottom: 5%;
+}
+.woocommerce-account .woocommerce-MyAccount-navigation{
+    float: left;
+    width: 39%;
+}
+.my-account .posts {
+    width: 85%;
+}
+.my-account .content ul{
+    margin-left: 0; 
+    margin-top: 0; 
+}
+.admin-bar .woocommerce::before{
+    display: none;
+}
+.admin-bar .woocommerce-orders-table__header{
+    width: 107px;
+}
+.admin-bar .woocommerce-orders-table__cell{
+    text-align: center;
+}
+.admin-bar .woocommerce-orders-table{
+    margin-top: -62px;
+}
+.admin-bar .page-id-10 .woocommerce-Button {
+    width: 33%;
+    margin-left: 5px;
+}
+.page-my-account-data .woocommerce-Button {
+    width: 35%;
+}
+.woocommerce-Address-title{
+    font-size: 12px;
+    font-weight: 700;
+}
+.content h3 {
+    font-size: 23px;
+    margin-bottom: 0;
+}
+.page-my-account-data address{
+    padding-bottom: 7%;
+}
+.woocommerce-account .addresses .title .edit {
+    float: right;
+    color: black;
+}
+.page-my-account-data .input-text{
+    width: 100% !important;
+
+}
+fieldset{
+    border: 0;
+}
+.woocommerce table.my_account_orders th{
+    text-align: center
+}
+.woocommerce table.my_account_orders{
+    font-size: 11px;
+}
+.page-my-account-data .edit{
+    background-color: white !important;
+    color: #7E8E71 !important;
+    border: 3px solid #7E8E71 !important;
+    text-align: center !important;
+    font-size: 10px !important;
+    text-transform: uppercase !important;
+    padding: 17px 13px !important;
+    line-height: 4px !important;
+    border-radius: 0 !important;
+    transition: 0.5s;
+    float: left !important;
+}
+.page-my-account-data .edit:hover{
+    transition: 0.5s;
+    background-color: #7E8E71 !important;
+    color: white !important;
+}
+.woocommerce-account .addresses .title h3 {
+    float: left;
+    padding-bottom: 2%;
+}
 @media only screen and (max-width: 768px) {
     .page-id-10 .woocommerce::before{
         height: 64px !important;
@@ -4523,9 +4644,7 @@ span.prdctfltr_showing {
 .woocommerce form .form-row.woocommerce-invalid .select2-container, .woocommerce form .form-row.woocommerce-invalid input.input-text, .woocommerce form .form-row.woocommerce-invalid select{
     border-color: #CC5E5D !important;
 }
-.woocommerce-account .posts{
-width: 70%;
-} 
+
 .woocommerce-account .posts .containerposts{
     margin-top: 20%;
 }
@@ -4585,5 +4704,17 @@ width: 70%;
 }
 .product-category{
     display: none !important;
+}
+
+#page-loader{
+    position:fixed; 
+    background-color:black;
+    z-index:9999999999999999999999999999999; 
+    height: 100%; 
+    width: 100%;
+}
+#page-loader h2{
+    color:white;
+    font-size:40px;
 }
 /*FIN DE LOS CAMBIOOS*/

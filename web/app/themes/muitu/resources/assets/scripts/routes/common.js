@@ -1,5 +1,6 @@
 export default {
   init() {
+
     $(".contacto").click(function (e) { 
       e.preventDefault();
       var email = $(this).data('email');
