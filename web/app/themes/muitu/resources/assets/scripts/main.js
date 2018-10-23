@@ -6,6 +6,9 @@ import 'bulma-carousel/carousel.min';
 // Import IE polyfill for Vue
 import "babel-polyfill";
 
+
+
+
 // Require Vue
 
 import Vue from 'vue';

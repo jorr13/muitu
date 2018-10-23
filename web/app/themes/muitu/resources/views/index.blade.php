@@ -1,3 +1,5 @@
+
+
 @extends('layouts.app')
 @section('content')
   <!--slider-->
@@ -6,19 +8,19 @@
 			<h1> Productos recientes</h1>
     </div>
 		<ul class="slider">
-         @foreach($products_loop as $products)
-            <li >
-                <div class="sliderimagen ">
-                    <!--Esto es el thumb-->
-                    {!! $products['thumbnail'] !!}
-                </div>
-                <section class="caption ">
-                    <h1>{!! $products['title'] !!}</h1>
-                    <p>{!! $products['excerpt'] !!}</p>
-                    <a href=" {!! $products['link'] !!}" class="botonfooter">Ver Producto</a>
-                </section>
-            </li>
-        @endforeach
+        @foreach($products_loop as $products)
+          <li >
+              <div class="sliderimagen ">
+                  <!--Esto es el thumb-->
+                  {!! $products['thumbnail'] !!}
+              </div>
+              <section class="caption ">
+                  <h1>{!! $products['title'] !!}</h1>
+                  <p>{!! $products['excerpt'] !!}</p>
+                  <a href=" {!! $products['link'] !!}" class="botonfooter">Ver Producto</a>
+              </section>
+          </li>
+      @endforeach
     </ul>
 		<div class="right">
 			<span class="fa fa-chevron-right"><img src="/app/uploads/2018/06/rigth.png" alt=""></span>
@@ -114,41 +116,5 @@
       </div>
     </div>
     </div>
-    
-
-    <div class='carousel carousel-animated carousel-animate-slide is-5'>
-      <div class='carousel-container'>
-        <div class='carousel-item is-active'>
-          <figure class="image is-2by1"><img src="https://bulma.io/images/placeholders/640x320.png"></figure>
-        </div>
-        <div class='carousel-item'>
-          <figure class="image is-2by1"><img src="https://bulma.io/images/placeholders/640x320.png"></figure>
-        </div>
-        <div class='carousel-item'>
-          <figure class="image is-2by1"><img src="https://bulma.io/images/placeholders/640x320.png"></figure>
-        </div>
-        <div class='carousel-item'>
-          <figure class="image is-2by1"><img src="https://bulma.io/images/placeholders/640x320.png"></figure>
-        </div>
-        <div class='carousel-item'>
-          <figure class="image is-2by1"><img src="https://bulma.io/images/placeholders/640x320.png"></figure>
-        </div>
-        <div class='carousel-item'>
-          <figure class="image is-2by1"><img src="https://bulma.io/images/placeholders/640x320.png"></figure>
-        </div>
-        <div class='carousel-item'>
-          <figure class="image is-2by1"><img src="https://bulma.io/images/placeholders/640x320.png"></figure>
-        </div>
-      </div>
-      <div class="carousel-navigation is-centered">
-        <div class="carousel-nav-left">
-          <i class="fa fa-chevron-left" aria-hidden="true"></i>
-        </div>
-        <div class="carousel-nav-right">
-          <i class="fa fa-chevron-right" aria-hidden="true"></i>
-        </div>
-      </div>
-    </div>
-
 @endsection
 

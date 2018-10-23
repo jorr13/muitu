@@ -117,6 +117,7 @@
     "bulma-carousel": "^3.0.0",
     "jquery": "^3.3.1",
     "slider-pro": "^1.4.0",
+    "stickyfill": "^1.1.1-strict",
     "vue": "^2.5.17",
     "vue-loader": "^15.4.1",
     "vue-style-loader": "^4.1.2",

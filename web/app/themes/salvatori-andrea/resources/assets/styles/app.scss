@@ -1,0 +1,30 @@
+@import "common/variables";
+
+/** Import everything from autoload */
+@import "autoload/bulma";
+@import "autoload/animate";
+
+
+/**
+ * Import npm dependencies
+ *
+ * Prefix your imports with `~` to grab from node_modules/
+ * @see https://github.com/webpack-contrib/sass-loader#imports
+ */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,500,800');
+*{
+    font-family: Montserrat;
+}
+
+/** Import theme styles */
+@import "components/comments";
+@import "components/forms";
+@import "components/wp-classes";
+@import "layouts/header";
+@import "layouts/sidebar";
+@import "layouts/footer";
+@import "layouts/pages";
+@import "layouts/posts";
+@import "layouts/tinymce";
+@import "common/global";
