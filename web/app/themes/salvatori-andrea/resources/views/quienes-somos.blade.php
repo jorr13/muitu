@@ -13,7 +13,7 @@
             <img class="logoparteuno" src="/app/uploads/2018/06/iso-white.png" alt="" />
         </div>
         <div class="contenidopartedos">
-            <h1>Quienes somos</h1>
+            <h1>Quiénes somos</h1>
         </div>
     </div>
 </div>
@@ -58,8 +58,8 @@
 @endif
 <div class="partedos an">
     <div class="titleseccionseis">
-        <h1>Nuestra Determinacion</h1>
-        <h2>Proposito</h2>
+        <h1>Nuestra Determinación</h1>
+        <h2>Propósito</h2>
     </div>
 @if(have_rows('seccion_seis', 44))
 {{-- loop through the rows of data --}}
@@ -135,7 +135,7 @@
 <div class="partedos an">
     <div class="titleseccionseis">
         <h1>Nuestro Cometido</h1>
-        <h2>Mision</h2>
+        <h2>Misión</h2>
     </div>
     @if(have_rows('seccion_siete', 44))
     {{-- loop through the rows of data --}}
@@ -182,7 +182,7 @@
     <div class="partedos an">
         <div class="titleseccionseis">
             <h1>Nuestro Perspectiva</h1>
-            <h2>Vision</h2>
+            <h2>Visión</h2>
         </div>
         @if(have_rows('seccion_ocho', 44))
         {{-- loop through the rows of data --}}

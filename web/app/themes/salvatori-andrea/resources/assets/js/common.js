@@ -221,21 +221,43 @@ $(document).ready(function(){
           }
         });
       });
+
+      console.log('guardado')
+
+
+      
+    ////////
+    setInterval(() => {
+    var precioExiste = $('.shipping .amount').length;
     
-      if ($('.woocommerce-info').length == 0)
-        $(".checkout-button").removeClass("button "),
+    if( precioExiste != 0 ){
+        $('.checkout-button').addClass('shipping');
+    }
+    else{
+        $('.checkout-button').removeClass('shipping');
+    }
+    }, 1000);
+    
+    
+
+
+/*
+
+        $(".checkout-button").removeClass("button ");
         $(".checkout-button").addClass("botonbloquiado");
-    
-      else 
-      if ($('.woocommerce-info').length > 0)     
-      $(".checkout-button").removeClass("botonbloquiado");
-    
-      if ($('.woocommerce-info').length == 0)
-      $('.order-total').addClass("disabled");
-    
-      else 
-      if ($('.woocommerce-info').length > 0)     
-      $('.order-total').removeClass("disabled");
+        $('.button').click(function(){
+              var getNameButton = $(this).attr('name');
+            
+              if(getNameButton == 'calc_shipping') {
+                  $(".checkout-button").removeClass("button"),
+                  $(".checkout-button").addClass("botonbloquiado");
+              }else{
+                  $(".checkout-button").removeClass("botonbloquiado");
+              }
+          });
+  
+
+     */
     //para enviar correo
     // Aqui va el script para el form del footer
     $("#submitemail").click(function (e) {
@@ -271,6 +293,28 @@ $(document).ready(function(){
     $(".is-small").click(function(){
         $('html, body').animate({ scrollTop: ($(".titlearriba").offset().top) -100 }, 1500); 
       });
-    
- 
-    
+
+
+      $("#submitfoooter").click(function (e) {
+        e.preventDefault();
+        var name = $("#namefooter").val();
+        var email = $("#emailfooter").val();
+        var mensaje = $("#mensajefooter").val();
+        $("#returnmessagefooter").empty(); // To empty previous error/success message.
+        // Checking for blank fields.
+        if (name == '' || email == '' || mensaje == '') {
+          alert("Porfavor llene todos los campos antes de enviar el mensaje");
+        } else {
+          // Returns successful data submission message when the entered information is stored in database.
+          $.post("https://www.muituhandmade.com/extras/contact_form2.php", {
+            name2: name,
+            email2: email,
+            mensaje2: mensaje,
+          }, function (data) {
+            $("#returnmessagefooter").append(data); // Append returned message to message paragraph.
+            if (data == "Gracias. Estaremos en contacto muy pronto.") {
+              $("#subscription-form")[0].reset(); // To reset form fields on success.
+            }
+          });
+        }
+        });

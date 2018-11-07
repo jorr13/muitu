@@ -4,7 +4,7 @@
 <div class="contenedor-product-categoria ">
 
     <div class="sliderheader">
-        <carousel :mouse-drag="true" :Touch-friendly="true" :navigationEnabled="true" :per-page="4" >
+        <carousel :mouse-drag="true" :Touch-friendly="true" :navigationEnabled="true" :perPageCustom="[[480, 2], [600, 3], [1280, 4]]" >
             <slide v-for="(item, index) in lists" :key="index" :class="{ 'is-hidden': index === 0 }">
             <a href="javascript:void(0)" v-on:click="obtenerProducto(item.id), hola()" v-bind:data-id="item.id" ref="el">
                 {{ item.name }}
@@ -16,8 +16,10 @@
 
    <div class="containerposts containerproduct hamacas">
         <carousel :mouse-drag="true" :Touch-friendly="true" :navigationEnabled="true" :paginationEnabled="false" :perPageCustom="[[480, 2], [600, 3], [1280, 4]]" >
-            <span class="cargando hidden">Cargando</span>
-            <span class="nohayproduct" style="padding: 50px 50px 80px; margin: 0 auto;" v-if="prodcts == ''">No hay productos para mostrar en este momento. Lo sentimos.</span>
+            <div class="cargando hidden">
+                <img src="/app/uploads/2018/06/cropped-iso-muitu-1-1-300x300.png" alt="">
+            </div>
+            <span class="nohayproduct" style="padding: 100px 50px 80px; margin: 0 auto;" v-if="prodcts == ''">No hay productos para mostrar en este momento. Lo sentimos.</span>
             <slide v-for="(producto, index) in prodcts" :key="index" class="productitem" >
       <a :href='producto.permalink'>
         <div class="imgprod">
@@ -62,7 +64,7 @@ export default {
     },
         mounted() {
             this.getUsers();
-            this.obtenerProducto(16);
+            this.obtenerProducto(32);
         },
         methods: {
             getUsers: function() {

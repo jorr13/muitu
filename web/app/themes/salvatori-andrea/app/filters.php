@@ -90,3 +90,4 @@ add_filter('glide/options', function ($options) {
     $options['max_image_size'] = 2000*2000;
     return $options;
 });
+

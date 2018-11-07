@@ -3,7 +3,7 @@
   <!--slider-->
   <div class="slideshow">
 		<div class="tituloslider">
-			<h1>Nuestro Colores</h1>
+			<h1>Nuestros Colores</h1>
     </div>
 		<ul class="slider">
         @foreach($products_loop as $products)
@@ -87,7 +87,7 @@
 
   <div class="posts columns">     
     <div class="containerposts columns is-multiline">
-        <h1 class="titlearriba an">Articulos recientes</h1><br>
+        <h1 class="titlearriba an">Nuestras historias recientes</h1><br>
         <p class="conteposts an">Conoce sobre las comunidades que le han dado vida a cada producto que distribuimos, su cultura, su lenguaje y su amor</p><br>
       @foreach(array_slice($posts_loop,0,4) as $posts)
       <div class="containerpost column is-9 an">
@@ -108,7 +108,7 @@
       </div>   
       @endforeach
       <div class="column is-12 botoncontainer">
-        <a class="botonposts botonfooter" href="/blog/">Nuestras Historias</a>
+        <a class="botonposts botonfooter" href="/nuestras-historias/">Nuestras Historias</a>
       </div>
     </div>
     </div>

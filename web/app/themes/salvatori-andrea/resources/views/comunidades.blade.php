@@ -10,7 +10,7 @@
     @include('partials.content-page')
     <div class="posts columns ">     
       <div class="containerposts columns is-multiline">
-        <h1 class="titlearriba an">Comunidades</h1><br>
+        <h1 class="titlearriba an">Nuestros Artesanos</h1><br>
         @foreach($comunidades_loop as $comunidades)
           <div class="containerpost column is-9 an">
             <div class="img-container">

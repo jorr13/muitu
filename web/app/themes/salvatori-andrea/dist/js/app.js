@@ -12643,7 +12643,7 @@ var render = function() {
       { staticClass: "containerposts columns is-multiline" },
       [
         _c("h1", { staticClass: "titlearriba animated fadeInUp" }, [
-          _vm._v("Articulos recientes")
+          _vm._v("Nuestras historias recientes")
         ]),
         _c("br"),
         _vm._v(" "),
@@ -13007,6 +13007,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
 
 
 Vue.use(__WEBPACK_IMPORTED_MODULE_0_vue_carousel___default.a);
@@ -13028,7 +13030,7 @@ Vue.use(__WEBPACK_IMPORTED_MODULE_0_vue_carousel___default.a);
     },
     mounted: function mounted() {
         this.getUsers();
-        this.obtenerProducto(16);
+        this.obtenerProducto(32);
     },
 
     methods: {
@@ -13091,7 +13093,7 @@ var render = function() {
               "mouse-drag": true,
               "Touch-friendly": true,
               navigationEnabled: true,
-              "per-page": 4
+              perPageCustom: [[480, 2], [600, 3], [1280, 4]]
             }
           },
           _vm._l(_vm.lists, function(item, index) {
@@ -13143,14 +13145,24 @@ var render = function() {
             }
           },
           [
-            _c("span", { staticClass: "cargando" }, [_vm._v("Cargando")]),
+            _c("div", { staticClass: "cargando hidden" }, [
+              _c("img", {
+                attrs: {
+                  src: "/app/uploads/2018/06/cropped-iso-muitu-1-1-300x300.png",
+                  alt: ""
+                }
+              })
+            ]),
             _vm._v(" "),
             _vm.prodcts == ""
               ? _c(
                   "span",
                   {
                     staticClass: "nohayproduct",
-                    staticStyle: { padding: "50px 50px 80px", margin: "0 auto" }
+                    staticStyle: {
+                      padding: "100px 50px 80px",
+                      margin: "0 auto"
+                    }
                   },
                   [
                     _vm._v(
@@ -13463,9 +13475,36 @@ $(document).ready(function () {
     });
 });
 
-if ($('.woocommerce-info').length == 0) $(".checkout-button").removeClass("button "), $(".checkout-button").addClass("botonbloquiado");else if ($('.woocommerce-info').length > 0) $(".checkout-button").removeClass("botonbloquiado");
+console.log('guardado');
 
-if ($('.woocommerce-info').length == 0) $('.order-total').addClass("disabled");else if ($('.woocommerce-info').length > 0) $('.order-total').removeClass("disabled");
+////////
+setInterval(function () {
+    var precioExiste = $('.shipping .amount').length;
+
+    if (precioExiste != 0) {
+        $('.checkout-button').addClass('shipping');
+    } else {
+        $('.checkout-button').removeClass('shipping');
+    }
+}, 1000);
+
+/*
+
+        $(".checkout-button").removeClass("button ");
+        $(".checkout-button").addClass("botonbloquiado");
+        $('.button').click(function(){
+              var getNameButton = $(this).attr('name');
+            
+              if(getNameButton == 'calc_shipping') {
+                  $(".checkout-button").removeClass("button"),
+                  $(".checkout-button").addClass("botonbloquiado");
+              }else{
+                  $(".checkout-button").removeClass("botonbloquiado");
+              }
+          });
+  
+
+     */
 //para enviar correo
 // Aqui va el script para el form del footer
 $("#submitemail").click(function (e) {
@@ -13500,6 +13539,30 @@ $(document).ready(function () {
 });
 $(".is-small").click(function () {
     $('html, body').animate({ scrollTop: $(".titlearriba").offset().top - 100 }, 1500);
+});
+
+$("#submitfoooter").click(function (e) {
+    e.preventDefault();
+    var name = $("#namefooter").val();
+    var email = $("#emailfooter").val();
+    var mensaje = $("#mensajefooter").val();
+    $("#returnmessagefooter").empty(); // To empty previous error/success message.
+    // Checking for blank fields.
+    if (name == '' || email == '' || mensaje == '') {
+        alert("Porfavor llene todos los campos antes de enviar el mensaje");
+    } else {
+        // Returns successful data submission message when the entered information is stored in database.
+        $.post("https://www.muituhandmade.com/extras/contact_form2.php", {
+            name2: name,
+            email2: email,
+            mensaje2: mensaje
+        }, function (data) {
+            $("#returnmessagefooter").append(data); // Append returned message to message paragraph.
+            if (data == "Gracias. Estaremos en contacto muy pronto.") {
+                $("#subscription-form")[0].reset(); // To reset form fields on success.
+            }
+        });
+    }
 });
 
 /***/ }),
