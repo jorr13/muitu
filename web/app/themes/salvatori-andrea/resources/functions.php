@@ -182,7 +182,7 @@ Container::getInstance()
             $translated_text = __( 'Transferencia bancaria directa', 'woocommerce' );
                 break;
             case 'Gracias. Tu pedido ha sido recibido.' :
-            $translated_text = __( '¡Gracias por su compra!. Su pedido ha sido recibido con exito. Si precisa cualquier aclaracion o tiene alguna duda, use el formulario de CONTACTANOS para hacernos llegar su consulta. En breve nos pondremos en contacto con usted para confirmar su pedido y cuando le sera enviado. ', 'woocommerce' );
+            $translated_text = __( '¡Gracias por tu compra! tu pedido ha sido enviado. Comprueba que la confirmación de tu pedido y los datos de entrega detallados hayan llegado tu correo electrónico, si precisa cualquier aclaracion o tiene alguna duda, use el formulario de CONTACTANOS para hacernos llegar su consulta.', 'woocommerce' );
                 break;
             case 'PayPal Express Checkout' :
             $translated_text = __( 'PayPal Pago exprés', 'woocommerce' );
@@ -214,6 +214,18 @@ Container::getInstance()
 
             case 'If you have a coupon code, please apply it below.':
             $translated_text = __( 'Si tiene un código de cupón, aplíquelo a continuación.', 'woocommerce-page' );
+            break;
+
+            case 'Precios de Menor a Mayor':
+            $translated_text = __( 'Precio: de Menor a Mayor', 'woocommerce-page' );
+            break;
+            
+            case 'Gracias por su compra, haga click en el botón debajo para pagar con su tarjeta de crédito vía Servired/RedSys.':
+            $translated_text = __( '¡Estás adquiriendo un producto Muitú!. Para finalizar la compra, realiza tu pago con tu tarjeta de credito Visa o Mastercard, por favor haz click en el boton "Pagar con tarjeta de crédito".', 'woocommerce-page' );
+            break;
+
+            case 'Pagar con tarjeta de crédito a traves de Servired/RedSys.':
+            $translated_text = __( 'Pagar con tarjeta de crédito', 'woocommerce-page' );
             break;
         }
         return $translated_text;

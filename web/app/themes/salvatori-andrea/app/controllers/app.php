@@ -107,86 +107,28 @@ function productsLoop()
         ];
     }, $products);
 }
-//hamacas
+
+
 function categoryLoop()
 {
-    $category = get_posts([
-        'post_type' => 'product',
-        'product_cat' => 'hamaca',
+    $category = get_terms([
+        'taxonomy' => 'product_cat',
+        'numberposts' => -1,
+        'parent' => 0
     ]);
 
-    return array_map(function ($post) {
+    return array_map(function ($term) {
         return [
-            'thumbnail' => get_the_post_thumbnail($post->ID, 'large'),
-            'title' => get_the_title($post->ID),
-            'excerpt' => apply_filters( 'the_excerpt', get_the_excerpt($post->ID) ),
-            'link' => get_permalink($post->ID),
-            'categories' => wp_list_pluck( get_the_category($post->ID),'name'),
-            'content' => apply_filters( 'the_content', get_the_content($post->ID) ),
-            'tags' => get_tags($post->ID)    
+            'title' => $term->name,
+            'img' => get_field('icono_de_la_categoria', $term),
+            'desc' => $term->description,
+            'link' => get_term_link($term),
+            'id' => $term->term_id,
+            'slug' => $term->slug
         ];
     }, $category);
 }
-//bolsos
-function bolsosLoop()
-{
-    $bolsos = get_posts([
-        'post_type' => 'product',
-        'product_cat' => 'bolsos',
-    ]);
 
-    return array_map(function ($post) {
-        return [
-            'thumbnail' => get_the_post_thumbnail($post->ID, 'large'),
-            'title' => get_the_title($post->ID),
-            'excerpt' => apply_filters( 'the_excerpt', get_the_excerpt($post->ID) ),
-            'link' => get_permalink($post->ID),
-            'categories' => wp_list_pluck( get_the_category($post->ID),'name'),
-            'content' => apply_filters( 'the_content', get_the_content($post->ID) ),
-            'tags' => get_tags($post->ID)    
-        ];
-    }, $bolsos);
-}
-//cinturones
-function cinturonesLoop()
-{
-    $cinturones = get_posts([
-        'post_type' => 'product',
-        'product_cat' => 'cinturones',
-    ]);
-
-    return array_map(function ($post) {
-        return [
-            'thumbnail' => get_the_post_thumbnail($post->ID, 'large'),
-            'title' => get_the_title($post->ID),
-            'excerpt' => apply_filters( 'the_excerpt', get_the_excerpt($post->ID) ),
-            'link' => get_permalink($post->ID),
-            'categories' => wp_list_pluck( get_the_category($post->ID),'name'),
-            'content' => apply_filters( 'the_content', get_the_content($post->ID) ),
-            'tags' => get_tags($post->ID)    
-        ];
-    }, $cinturones);
-}
-    //pulceras
-    function pulcerasLoop()
-    {
-        $pulceras = get_posts([
-            'post_type' => 'product',
-            'product_cat' => 'pulceras',
-        ]);
-
-        return array_map(function ($post) {
-            return [
-                'thumbnail' => get_the_post_thumbnail($post->ID, 'large'),
-                'title' => get_the_title($post->ID),
-                'excerpt' => apply_filters( 'the_excerpt', get_the_excerpt($post->ID) ),
-                'link' => get_permalink($post->ID),
-                'categories' => wp_list_pluck( get_the_category($post->ID),'name'),
-                'content' => apply_filters( 'the_content', get_the_content($post->ID) ),
-                'tags' => get_tags($post->ID)    
-            ];
-        }, $pulceras);
-    }
 
 }
 

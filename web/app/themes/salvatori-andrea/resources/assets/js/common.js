@@ -27,7 +27,7 @@
 
 
 $(document).ready(function(){
-    $(".prdctfltr_wc").before("<h1 class='titletienda'>Nuestros Productos</h1>");
+
     var imgItems = $('.slider li').length; // Numero de Slides
     var imgPos = 1;
     // Agregando paginacion --
@@ -227,16 +227,20 @@ $(document).ready(function(){
 
       
     ////////
+    
+    
     setInterval(() => {
     var precioExiste = $('.shipping .amount').length;
     
-    if( precioExiste != 0 ){
+    if( precioExiste != 0 ){    
         $('.checkout-button').addClass('shipping');
+
     }
     else{
         $('.checkout-button').removeClass('shipping');
-    }
+   }
     }, 1000);
+
     
     
 

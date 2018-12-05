@@ -20,7 +20,12 @@
   
     <div class="column is-10 is-pulled-right menusecundario has-text-right">
     <a href="http://www.muituhandmade.com/"><img class="logo-menusecundario" src="{{ home_url('/app/uploads/2018/06/Logo-02.png') }}" alt=""></a>
-      <a href="/cart/" class="link">Carrito</a>
+      <a href="<?php echo wc_get_cart_url(); ?>" class="link">Carrito        
+        <span class="contador-carrito">        
+          <?php echo sprintf ( WC()->cart->get_cart_contents_count() ); ?>
+        </span>
+      </a>
+
       
       @php
       global $current_user;
@@ -33,5 +38,7 @@
       @endif
       <div class="line"></div>
     </div>
+    
+
   </header>
   

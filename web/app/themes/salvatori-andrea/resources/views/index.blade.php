@@ -31,14 +31,14 @@
   <!--quienes somos-->
   @if(have_rows('seccionuno', 2))
     {{-- loop through the rows of data --}}
-    @while (have_rows('seccionuno', 2))@php(the_row())
+    @while (have_rows('seccionuno', 2))@php the_row() @endphp
     <div class="seccionuno">
       <div class="contenedorseccionuno contenedorseccionuno is-marginless columns is-multiline">
       	<div class="imgseccion column is-5 an" style="background:url('{{ get_sub_field('img') }}'); background-size: cover; height: 100%; "></div>	
 	      	<div class="conten column is-5 an">
 	      	  <h1 class="titleseccionuno">{{ get_sub_field('titulo') }}</h1>
             <p class="contenidouno">{{ get_sub_field('descripcion') }}</p>
-            @php ( $link = get_sub_field('boton'))
+            @php $link = get_sub_field('boton') @endphp
              @if($link) 
              <a class="botonseccion2" href="/quienes-somos" target="{{$link['target']}}">{{$link['title']}}</a>
             @endif
@@ -62,7 +62,7 @@
   <!--piezas unicas-->
   @if(have_rows('secciondos', 2))
     {{-- loop through the rows of data --}}
-    @while (have_rows('secciondos', 2))@php(the_row())
+    @while (have_rows('secciondos', 2))@php the_row() @endphp
       <div class="secciondos ">
         <div class="contenedorsecciondos is-marginless columns is-multiline">
             <div class="column is-1" style="
@@ -70,7 +70,7 @@
             <div class="contendos column is-5 an">
                 <h1 class="titlesecciondos an">{{ get_sub_field('titulo') }}</h1>
               <p class="contenidodos an">{{ get_sub_field('descripcion') }}</p>
-              @php ( $link = get_sub_field('boton'))
+              @php $link = get_sub_field('boton') @endphp
               @if($link)
               <a class="botonseccion" href="{{$link['url']}}" target="{{$link['target']}}">Conoce nuestros artesanos</a>
               @endif
@@ -112,6 +112,8 @@
       </div>
     </div>
     </div>
+
+
 
 @endsection
 

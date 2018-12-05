@@ -1,9 +1,16 @@
 <style>
 
 
-	.product-category{
+	li.product-category.product.first{
 		display: none !important;
 	}	
+	.woocommerce ul.products li.product-category, .woocommerce-page ul.products li.product-category{
+		display: none !important;
+	}
+	.page-id-7 .first {
+     display: block !important; 
+	}
+
 	</style>
 	<footer class="content-info footer an">
 	  <div class="container">

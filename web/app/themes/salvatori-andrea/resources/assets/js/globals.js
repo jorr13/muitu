@@ -1,8 +1,8 @@
 //Setting up the prototype vars
 Vue.prototype.$appUrl = location.protocol+'//'+location.hostname+(location.port ? ':'+location.port: '')
 
-Vue.prototype.$urlUsers = 'https://muituhandmade.com/wp-json/wc/v2/products/categories'
-Vue.prototype.$urlProducts = 'https://muituhandmade.com/wp-json/wc/v2/products?category='
+Vue.prototype.$urlUsers = 'https://muituhandmade.com/wp-json/wc/v2/products/categories?parent=0'
+Vue.prototype.$urlProducts = 'https://muituhandmade.com/wp-json/wc/v2/products?tag=49&category='
 Vue.prototype.$usuario ='ck_c5f42eeda527c36288836f80e03daa4025482670'
 Vue.prototype.$password ='cs_7def225ec2e21251c4a48a0c9800cd3701ee0167'
 
