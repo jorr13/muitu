@@ -9,7 +9,7 @@
          
     <!--Esta pagina es de productos-->
 
-    <div v-for="(post, index) in posts" :key="index" class="containerpost column is-9 an">
+    <div v-for="(post, index) in posts" :key="index" class="containerpost column is-9">
       <div class="img-container">
       <!--Esto es el thumb-->
         <img :src="post.fimg_url"  />

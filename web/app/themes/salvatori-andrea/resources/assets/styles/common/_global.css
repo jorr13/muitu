@@ -18,6 +18,8 @@ logosheader{
 }
 .imgseccion{
     background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
 }
 .menu-menu-lateral-container a{
     text-transform: uppercase;
@@ -78,14 +80,13 @@ display: none;
 .sub-menu{
     height: 0px;
     transition: ease-out 0.3s;
-    width: 100%;
+    width: calc(100% + 35px);
     overflow-y: scroll;
     overflow-x: hidden;
     position: relative;
     display: block;
-    transform: translateX(35px);
-    padding-right: 55px;
-    margin-left: 5px;
+
+
 }
 #menu-item-98:hover .sub-menu{
    height: 268px;
@@ -2325,11 +2326,26 @@ span#returnmessage {
     }
 }
 @media only screen and (max-width: 768px) {
+    .menu-item{
+        padding: 10px 0;
+    }
     .VueCarousel-wrapper {
         height: 400px;
     }
     .sub-menu{
         padding-right: 70px;
+        height: 0;
+        -webkit-transition: .3s ease-out;
+        transition: .3s ease-out;
+        width: 100%;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        position: relative;
+        display: block;
+        -webkit-transform: translateX(35px);
+        transform: translateX(35px);
+        margin-left: 5px;
+        margin-top: 10px;
 
     }
     .containerproduct{
@@ -3371,18 +3387,7 @@ span#returnmessage {
     padding-top: 100px !important;
 }
 }
-@media only screen and (max-width: 435px) {
 
-.woocommerce ul.products[class*=columns-] li.product, .woocommerce-page ul.products[class*=columns-] li.product {
-    width: 90% !important;
-    float: left !important;
-    clear: none !important;
-    margin: 15px !important;
-}
-.woocommerce ul.products li.product .button{
-    padding: 0px !important;
-} 
-}
 @media only screen and (max-width: 700px) {
 
 /*estilos Page template*/
@@ -5270,6 +5275,15 @@ sku_wrapper, .posted_in, .tagged_as{
         font-size: 25px!important;
     }
 }
+@media only screen and (max-width: 768px){
+    .woocommerce-account .woocommerce-MyAccount-navigation{
+        width: 100% !important;
+    }
+    .woocommerce-MyAccount-navigation ul {
+        list-style: none;
+        border-right: solid 0px #f1f1f1;
+    }
+}
 
 /**/
 
@@ -5388,24 +5402,26 @@ sku_wrapper, .posted_in, .tagged_as{
     list-style: none;
     transition: 0.5s;
     z-index: 9999999;
+    display: none;
 }
 .contenedor-select-categori ul li{
     padding-top: 8px;
     font-size: 12px;
 }
-.contenedor-padre-filtro:hover .contenedor-select-categori{
+.contenedor-select-categori.active{
     transition: 0.5s;
-    height: 100%;
-    opacity: 1; 
+    height: 100% !important;
+    opacity: 1 !important; 
 }
-.contenedor-padre-filtro:hover .contenedor-select-categori ul{
+.contenedor-select-categori.active ul{
     transition: 0.5s;
-    height: auto;  
-    z-index: 99;
-    position: absolute;
+    height: auto!important ;  
+    z-index: 99 !important;
+    position: absolute !important;
+    display: block !important;
+}
 
 
-}
 .format-standard .woocommerce.columns-4 
 {
     width: 100%;
@@ -5446,3 +5462,57 @@ sku_wrapper, .posted_in, .tagged_as{
     font-size: 0px!important; 
 
 }
+.woocommerce-page form .form-row-first{
+    width: 50%;
+}
+.woocommerce-result-count{
+    display: none;
+}
+.categoriafiltrada{
+    width: 50%; 
+    position: absolute; 
+    margin-top: -38px;
+}
+.an{
+    opacity: 0;
+}
+.woocommerce form .form-row label{
+    line-height: 2;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+}
+@media only screen and (max-width: 768px){
+    .categoriafiltrada{
+        width: 100%;
+        position: relative;
+        margin-top: -38px;
+        padding-bottom: 44px;
+        text-align: center;
+    }
+    .categoriafiltrada a{
+        margin: 0 auto;
+    }
+    .woocommerce .woocommerce-ordering {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 435px) {
+
+    .woocommerce ul.products[class*=columns-] li.product, .woocommerce-page ul.products[class*=columns-] li.product {
+        width: 90% !important;
+        float: left !important;
+        clear: none !important;
+        margin: 23px 23px 23px 15px !important;
+    }
+    .woocommerce ul.products li.product .button{
+        padding: 0px !important;
+    } 
+    h2.woocommerce-loop-product__title{
+        font-size: 15px !important;
+        height: 35px !important;
+    }
+    .woocommerce-Price-amount{
+        font-size: 15px !important;
+    }
+    
+    }

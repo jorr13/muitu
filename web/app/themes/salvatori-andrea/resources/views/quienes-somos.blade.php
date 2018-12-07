@@ -78,7 +78,7 @@
             </div>	
             <div class="primeraimagen column is-4">
                 <div class="imagenprimera" style="background:url('{{ get_sub_field('segundaImagen') }}');background-size: cover;
-                height: 100%;"></div>
+                height: 100%; background-size: cover; background-position: center;"></div>
             </div>
         </div>
         <div class="is-marginless columns is-multiline">
@@ -89,7 +89,7 @@
             </div>	
             <div class="primeraimagen column is-4">
                 <div class="imagenprimera" style="background:url('{{ get_sub_field('terceraImagen') }}');background-size: cover;
-                height: 100%;"></div>
+                height: 100%; background-size: cover; background-position: center;"></div>
             </div>
             <div class="containercolor column is-4">  
                 <div class="containerrosa containerverde">
@@ -100,7 +100,7 @@
         <div class="is-marginless columns is-multiline">
             <div class="primeraimagen column is-4">
                 <div class="imagenprimera" style="background:url('{{ get_sub_field('cuartaImagen') }}');background-size: cover;
-                height: 100%;"></div>
+                height: 100%; background-size: cover; background-position: center;"></div>
             </div>
             <div class="containercolor column is-4">  
                 <div class="containerbarro containerverde">
@@ -109,7 +109,7 @@
             </div>
             <div class="primeraimagen column is-4">
                 <div class="imagenprimera" style="background:url('{{ get_sub_field('quintaImagen') }}');background-size: cover;
-                height: 100%;"></div>
+                height: 100%; background-size: cover; background-position: center;"></div>
             </div>	
         </div>
         <p class="contenidoseis contenidoabajo">{{ get_sub_field('contenidoAbajo') }}</p>	

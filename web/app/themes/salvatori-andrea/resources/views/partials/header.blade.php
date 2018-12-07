@@ -13,8 +13,8 @@
         {!! wp_nav_menu(['theme_location' => 'primary_navigation']) !!}
       @endif
       <div class="imgheader">
-        <a href="https://www.instagram.com/muituhandmade/"><img src="{{ home_url('/app/uploads/2018/06/instagram-logo.png') }}" class="logosheader" alt=""></a> 
-        <br><a href="https://www.facebook.com/Muit%C3%BA-238590030225809/"><img src="{{ home_url('/app/uploads/2018/06/facebook-logo.png') }}" class="logosheader" alt=""></a>
+        <a href="https://www.instagram.com/muituhandmade/" target="_blank"><img src="{{ home_url('/app/uploads/2018/06/instagram-logo.png') }}" class="logosheader" alt=""></a> 
+        <br><a href="https://www.facebook.com/Muit%C3%BA-238590030225809/" target="_blank"><img src="{{ home_url('/app/uploads/2018/06/facebook-logo.png') }}" class="logosheader" alt=""></a>
       </div>
       </div>
   

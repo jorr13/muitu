@@ -38,8 +38,8 @@
 			</div>
 			<div class="footertres column is-4">
 				<h1 class="siguenos">Síguenos</h1>
-				<a href="https://www.instagram.com/muituhandmade/"><img src="{{ home_url('/app/uploads/2018/06/instagram-logo.png') }}" class="logos" alt=""></a>
-				<a href="https://www.facebook.com/Muit%C3%BA-238590030225809/"><img src="{{ home_url('/app/uploads/2018/06/69407.svg') }}" class="logos logos1" alt=""></a>
+				<a href="https://www.instagram.com/muituhandmade/" target="_blank"><img src="{{ home_url('/app/uploads/2018/06/instagram-logo.png') }}" class="logos" alt=""></a>
+				<a href="https://www.facebook.com/Muit%C3%BA-238590030225809/" target="_blank"><img src="{{ home_url('/app/uploads/2018/06/69407.svg') }}" class="logos logos1" alt=""></a>
 				
 				<form action="https://muituhandmade.us19.list-manage.com/subscribe/post?u=b4bb0d3f71cdcdf4edc0bbb42&amp;id=83d08e4dc1" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 					<h1 class="suscribete">Suscríbete</h1>

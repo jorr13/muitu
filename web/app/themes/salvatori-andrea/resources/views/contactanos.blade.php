@@ -59,9 +59,15 @@
         <h3 class="titlecontactanos">CONTACTANOS:</h3>
     </div>
     <div class="tarjetaabajo an">
-        <p class="nrotlf">+341 667 32 81 19</p>
-        <p class="correoabajo">info@muituhandmade.com</p>
-        <p class="direccionabajo">calle amado nervo. 5. piso 2 a madrid 28007</p>
+        @if(have_rows('informacion_de_contacto', 97))
+        @while (have_rows('informacion_de_contacto', 97))@php(the_row())
+        
+        <p class="nrotlf">{{ get_sub_field('numero_de_contacto') }}</p>
+        <p class="correoabajo">{{ get_sub_field('correo_electronico_tarjeta_abajo') }}</p>
+        <p class="direccionabajo">{{ get_sub_field('direccion_tarjeta_abajo') }}</p>
+        @endwhile 
+        @else      
+        @endif
     </div>
 
 @endsection

@@ -13,7 +13,7 @@
         <h1 class='titletienda'>Nuestros Productos</h1>
         <div class="contenedor-mi-filtro column is-12 is-multiline">
             <div class="contenedor-papa-mi-filtro columns is-multiline">
-                    @foreach(array_slice($category_loop,1,99) as $category)
+                    @foreach($category_loop as $category)
                     <div class="contenedor-padre-filtro column is-4-desktop is-6-tablet is-12-mobile" id="item-{{$category['id']}}">
                       <div class="contenedor-titulos-tarjeta-nuestros-servicios">
                         <h4>{{$category['title']}}</h4><br>
@@ -31,6 +31,7 @@
                       </div>
                    </div>
                   @endforeach
+
             </div>
             @while(have_posts()) @php the_post() @endphp
         </div>

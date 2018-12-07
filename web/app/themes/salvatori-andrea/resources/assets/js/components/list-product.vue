@@ -10,11 +10,6 @@
                 {{ item.name }}
             </a>
             </slide>
-            <slide>
-            <a target="_blank" href="/shop/">
-                Otras artesanias
-            </a>
-            </slide>
         </carousel>
     </div>
 
@@ -69,7 +64,7 @@ export default {
     },
         mounted() {
             this.getUsers();
-            this.obtenerProducto(48);
+            this.obtenerProducto(56);
         },
         methods: {
             getUsers: function() {
